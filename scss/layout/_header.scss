@@ -1,0 +1,162 @@
+// Header
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/assets/images/home/header.png);
+    background-repeat: no-repeat;
+    background-color:black ;
+    padding-top: 5px;
+   .img{
+    stroke: var(--Grey-40, #666);
+    img{
+        width: 100%;
+    }
+   }
+   .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .text{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $colorheader;
+        text-align: center;
+        font-family: $font-header;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        a{
+            color: $colorheader;
+            text-align: center;
+            font-family: $font-header;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 27px */
+            text-decoration-line: underline;
+            @include for-size(tablet){
+                font-size: 14px;
+               
+               }
+            @include for-size(phone){
+                font-size: 12px;
+            }
+        }
+        @include for-size(tablet){
+            font-size: 14px;
+            gap: 6px;
+           }
+           @include for-size(phone){
+            font-size: 12px;
+            gap: 6px;
+           }
+    }
+    img{
+        padding: 4px;
+        border-radius: 75px;
+        background: rgba(255, 255, 255, 0.10);
+        left: 100%;
+        position: relative;
+@include for-size(phone){
+    left: 1%;
+}
+    }
+   }
+}
+
+
+// Navbar
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 162px;
+    background: var(--Grey-10, #1A1A1A);
+    @include for-size (tablet){
+        padding: 14px 80px;
+    }
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+   
+  }
+  .left-side{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .middle-side{
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        li a{
+            text-decoration: none;
+            color: $colorheader;
+            font-family: $font-header;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 21px */
+            @include for-size(tablet){
+                font-size: 14px;
+            }
+        }
+        .a1{
+            display: flex;
+            padding: 14px 24px;
+            align-items: flex-start;
+            gap: 10px;
+            border-radius: 10px;
+            border: 1px solid var(--Grey-15, #262626);
+            background: var(--Grey-08, #141414);
+            @include for-size (tablet){
+                padding: 12px 20px;
+            }
+        }
+    }
+   @include for-size(phone){
+    display: none;
+   }
+  }
+  .right-side{
+    display: flex;
+    align-items: center;
+    button{
+    display: flex;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-08, #141414);
+    color: $colorheader;
+    font-family: $font-header;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+    cursor: pointer;
+    @include for-size(tablet){
+        font-size: 14px;
+        padding: 14px 20px;
+
+    }
+    @include for-size(phone){
+        display: none;
+
+    }
+  }
+  img{
+    display: none;
+    @include for-size(phone){
+        display: initial;
+    }
+  }
+}
+}

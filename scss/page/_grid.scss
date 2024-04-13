@@ -1,0 +1,63 @@
+.grid-section{
+    margin-top: 60px;
+    .grid{
+     
+        border: 1px solid var(--Grey-15, #262626);
+        background: var(--Grey-08, #141414);
+        box-shadow: 0px 0px 0px 6px #191919;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        gap: 20px;
+      @include for-size(tablet){
+        padding: 10px;
+        gap: 10px;
+      }
+      @include for-size(phone){
+        padding: 10px;
+        border-radius: 12px;
+    
+      }
+        .grid1{
+            display: flex;
+            padding: 40px 20px;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            flex: 1 0 0;
+            border-radius: 12px;
+            border: 1px solid var(--Grey-15, #262626);
+            background: var(--Grey-10, #1A1A1A);
+            @include for-size(tablet){
+                padding: 30px 16px;
+                gap: 16px;
+            }
+            @include for-size(phone){
+                display: flex;
+                padding: 20px 14px;
+                gap: 14px;
+                flex-wrap: wrap;
+              
+            }
+            p{
+                color: var(--Absolute-White, #FFF);
+                text-align: center;
+                font-family: Urbanist;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 30px */
+                @include for-size(tablet){
+                    font-size: 16px;
+                }
+                @include for-size(phone){
+                    font-size: 14px;
+                }
+            }
+            .arrowimg{
+                position: absolute;
+               
+            }
+        }
+    }
+}

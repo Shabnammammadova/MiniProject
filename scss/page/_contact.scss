@@ -1,0 +1,180 @@
+.contact-section{
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    @include for-size(tablet){
+        gap: 60px;
+      }
+      @include for-size(phone){
+        flex-direction: column-reverse;
+      }
+    .left-side{
+            width: 50%;
+            padding-left: 162px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            // position: relative;
+            // top: 60px;
+            @include for-size(phone){
+                padding: 0;
+              }
+        .p1{
+            color: $colorheader;
+            font-family: $font-header;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 72px */
+            
+            @include for-size(tablet){
+                font-size: 46px;
+              }
+              @include for-size(phone){
+                font-size: 28px;
+                
+              }
+        }
+        
+        .span1{
+            color: var(--Grey-60, #999);
+            font-family:$font-header;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 27px */
+            margin-top: 24px;
+            @include for-size(tablet){
+                font-size: 16px;
+              }
+              @include for-size(phone){
+                font-size: 14px;
+                
+              }
+        }
+        .btn{
+            display: flex;
+            gap: 20px;
+            @include for-size(tablet){
+               gap: 16px;
+              }
+              @include for-size(phone){
+                flex-direction: column;
+              }
+        
+            .btn1{
+                border-radius: 10px;
+                background: transparent;
+                border: 1px solid var(--Grey-15, #262626);
+                display: flex;
+                padding: 18px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                color: var(--Absolute-White, #FFF);
+                font-family: Urbanist;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%; /* 27px */
+                cursor: pointer;
+                @include for-size(tablet){
+                    font-size: 14px;
+                    padding: 14px 20px;
+                    border-radius: 8px;
+                  }
+            }
+            .btn2{
+                border-radius: 10px;
+                border: transparent;
+                background: var(--Purple-60, #703BF7);
+                display: flex;
+                padding: 18px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                color: var(--Absolute-White, #FFF);
+                font-family: Urbanist;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%; /* 27px */
+                cursor: pointer;
+                @include for-size(tablet){
+                    font-size: 14px;
+                    padding: 14px 20px;
+                    border-radius: 8px;
+                  }
+            }
+        }
+        .price{
+            display: flex;
+            gap: 20px;
+            @include for-size(tablet){
+               gap: 16px;
+              }
+              @include for-size(phone){
+                margin-top: 40px;
+               
+              }
+            .card{
+                border-radius: 12px;
+                border: 1px solid var(--Grey-15, #262626);
+                background: var(--Grey-10, #1A1A1A);
+                padding: 16px 24px;
+                @include for-size(tablet){
+                    padding: 14px 20px;
+                  }
+                  @include for-size(phone){
+                   padding: 16px;
+                   
+                  }
+                
+                p{
+                    color: var(--Absolute-White, #FFF);
+                    font-family: Urbanist;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%; /* 60px */
+                    @include for-size(tablet){
+                        font-size: 30px;
+                      }
+                      @include for-size(phone){
+                        font-size: 24px;
+                        text-align: center;
+                      }
+                }
+                span{
+                    color: var(--Grey-60, #999);
+                    font-family: Urbanist;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 27px */
+                    @include for-size(tablet){
+                        font-size: 16px;
+                      }
+                      @include for-size(phone){
+                        font-size: 14px;
+                        text-align: center;
+                      }
+                }
+            }
+        }
+        }
+
+            .right-side{
+               width: 50%;
+              img{
+                width: 100%;
+                @include for-size(phone){
+                    border-radius: 20px;
+                    margin-top: 40px;
+                    
+                  }
+              }
+            }
+        }
+}
