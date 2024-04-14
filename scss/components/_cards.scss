@@ -1,0 +1,114 @@
+.featured-cards{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    .container{
+        .cards{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            .card{
+                display: flex;
+                padding: 40px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 30px;
+                flex: 1 0 0;
+                border-radius: 12px;
+                border: 1px solid var(--Grey-15, #262626);
+                background: var(--Grey-08, #141414);
+                .card-header{
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        color: var(--Absolute-White, #FFF);
+                        font-family: Urbanist;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 150%; /* 36px */
+                    }
+                    span{
+                        color: var(--Grey-60, #999);
+                        font-family: Urbanist;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; /* 27px */
+                        a{
+                            color: var(--Absolute-White, #FFF);
+                            font-family: Urbanist;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%;
+                            text-decoration-line: underline;
+                        }
+                    }
+                }
+                .card-body{
+                    display: flex;
+                    gap: 10px;
+                    .card-text{
+                        display: flex;
+                        align-items: center;
+                        border-radius: 28px;
+                        gap: 2px;
+                        border: 1px solid var(--Grey-15, #262626);
+                        background: var(--Grey-10, #1A1A1A);
+                        padding: 8px 14px;
+                        p{
+                            color: var(--Absolute-White, #FFF);
+                            font-family: Urbanist;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%; /* 27px */
+                        }
+                    }
+                }
+                .card-footer{
+                    display: flex;
+                    align-items: center;
+                    gap: 110px;
+                    .price{
+                        display: flex;
+                        flex-direction: column;
+                        p{
+                            color: var(--Grey-60, #999);
+                            font-family: Urbanist;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%; /* 27px */
+                        }
+                        span{
+                            color: var(--Absolute-White, #FFF);
+                            font-family: Urbanist;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 150%; /* 36px */
+                        }
+                    }
+                    .btn{
+                    button{
+                        display: flex;
+                        padding: 18px 24px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        border: transparent;
+                        border-radius: 10px;
+                        background: var(--Purple-60, #703BF7);
+                        color: var(--Absolute-White, #FFF);
+                        font-family: Urbanist;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; /* 27px */
+                       
+                    }}
+                }
+            }
+        }
+    }
+}

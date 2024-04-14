@@ -1,13 +1,14 @@
 .grid-section{
     margin-top: 60px;
     .grid{
-     
         border: 1px solid var(--Grey-15, #262626);
         background: var(--Grey-08, #141414);
         box-shadow: 0px 0px 0px 6px #191919;
-        display: flex;
+        // display: flex;
         padding: 20px;
-        align-items: center;
+        // align-items: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
       @include for-size(tablet){
         padding: 10px;
@@ -16,6 +17,7 @@
       @include for-size(phone){
         padding: 10px;
         border-radius: 12px;
+        grid-template-columns: repeat(2, 1fr);
     
       }
         .grid1{
@@ -28,16 +30,15 @@
             border-radius: 12px;
             border: 1px solid var(--Grey-15, #262626);
             background: var(--Grey-10, #1A1A1A);
+            position: relative;
             @include for-size(tablet){
                 padding: 30px 16px;
                 gap: 16px;
             }
             @include for-size(phone){
-                display: flex;
                 padding: 20px 14px;
                 gap: 14px;
-                flex-wrap: wrap;
-              
+
             }
             p{
                 color: var(--Absolute-White, #FFF);
@@ -56,7 +57,8 @@
             }
             .arrowimg{
                 position: absolute;
-               
+                right: 0;
+                top:0
             }
         }
     }
