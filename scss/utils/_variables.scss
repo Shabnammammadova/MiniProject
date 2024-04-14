@@ -1,6 +1,28 @@
 $colorheader: var(--Absolute-White, #FFF);
 $font-header: Urbanist;
-
+// Purple shades
+$color60:#FF7A00;
+$color65:#1A64FF;
+$color70:#FF9533;
+$colot75:#FFCA99;
+$color90:#FFE4CC;
+$color95:#FFF1E5;
+$color97:#FFF7F0;
+$color99:#FFFCFA;
+// White shades
+$colorwhite90:#E4E4E7;
+$colorwhite95:#F1F1F3;
+$colorwhite97:#F7F7F8;
+$colorwhite99:#FCFCFD;
+// Grey shades
+$colorgrey08:#141414;
+$colorgrey10:#1A1A1A;
+$colorgrey15:#262626;
+$colorgrey20:#333333;
+$colorgrey30:#4D4D4D;
+$colorgrey40:#666666;
+$colorgrey50:#808080;
+$colorgrey60:#999999;
 $media:(
     "md":1596px,
     "sm":1300px

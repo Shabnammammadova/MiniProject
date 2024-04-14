@@ -66,19 +66,23 @@
             .btn1{
                 border-radius: 10px;
                 background: transparent;
-                border: 1px solid var(--Grey-15, #262626);
+                border: 1px solid $colorgrey15;
                 display: flex;
                 padding: 18px 24px;
                 justify-content: center;
                 align-items: center;
                 gap: 8px;
-                color: var(--Absolute-White, #FFF);
-                font-family: Urbanist;
+                color: $colorheader;
+                font-family: $font-header;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 150%; /* 27px */
                 cursor: pointer;
+                &:hover{
+                  background-color:  #703BF7;
+                  
+                }
                 @include for-size(tablet){
                     font-size: 14px;
                     padding: 14px 20px;
@@ -94,13 +98,18 @@
                 justify-content: center;
                 align-items: center;
                 gap: 8px;
-                color: var(--Absolute-White, #FFF);
-                font-family: Urbanist;
+                color: $colorheader;
+                font-family: $font-header;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 150%; /* 27px */
                 cursor: pointer;
+                &:hover{
+                  color:  $colorwhite95;
+                  background-color: transparent;
+                  border: 1px solid $colorgrey15;
+                }
                 @include for-size(tablet){
                     font-size: 14px;
                     padding: 14px 20px;

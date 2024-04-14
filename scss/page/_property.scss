@@ -43,8 +43,8 @@
                         gap:6px
                     }
                     p{
-                        color: var(--Absolute-White, #FFF);
-                        font-family: Urbanist;
+                        color: $colorheader;
+                        font-family:$font-header;
                         font-size: 48px;
                         font-style: normal;
                         font-weight: 600;
@@ -55,7 +55,7 @@
                     }
                     span{
                         color: var(--Grey-60, #999);
-                        font-family: Urbanist;
+                        font-family: $font-header;
                         font-size: 18px;
                         font-style: normal;
                         font-weight: 500;
@@ -78,13 +78,17 @@
                         border-radius: 10px;
                         border: 1px solid var(--Grey-15, #262626);
                         background: var(--Grey-10, #1A1A1A);
-                        color: var(--Absolute-White, #FFF);
-                        font-family: Urbanist;
+                        color: $colorheader;
+                        font-family: $font-header;
                         font-size: 18px;
                         font-style: normal;
                         font-weight: 500;
                         line-height: 150%; /* 27px */
+                        cursor: pointer;
                         width: 196px;
+                        &:hover{
+                         background-color: $color65;
+                        }
                         @include for-size(tablet){
                             padding: 14px 20px;
                         }

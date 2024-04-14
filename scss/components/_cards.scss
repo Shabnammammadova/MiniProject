@@ -1,12 +1,35 @@
 .featured-cards{
     margin-top: 80px;
     margin-bottom: 50px;
+    padding: 0 ;
+    @include for-size(tablet){
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    @include for-size(phone){
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
     .container{
+        width: 100%;
+        @include for-size(tablet){
+            width: 100%;
+        }
+        @include for-size(phone){
+            width: 100%;
+        }
         .cards{
             display: flex;
             align-items: center;
             gap: 30px;
+            @include for-size(tablet){
+                gap: 20px;
+            }
+            @include for-size(phone){
+                flex-direction: column;
+            }
             .card{
+               
                 display: flex;
                 padding: 40px;
                 flex-direction: column;
@@ -16,49 +39,102 @@
                 border-radius: 12px;
                 border: 1px solid var(--Grey-15, #262626);
                 background: var(--Grey-08, #141414);
+                width: 100%;
+                @include for-size(tablet){
+                    padding: 30px;
+                    gap: 20px;
+                    width: 100%;
+                }
+               @include for-size(phone){
+                padding: 24px;
+                gap: 16px;
+                width: 100%;
+               }
+               .card-info{
+                width: 100%;
+                 @include for-size(tablet){
+                    width: 100%;
+                }
+                // @include for-size(phone){
+                //     width: 100%;
+                // }
+                img{
+                    width: 100%;
+                    // @include for-size(tablet){
+                    //     width: 100%;
+                    // }
+                    // @include for-size(phone){
+                    //     width: 100%;
+                    // }
+                }
+               }
                 .card-header{
                     display: flex;
                     flex-direction: column;
                     p{
                         color: var(--Absolute-White, #FFF);
-                        font-family: Urbanist;
+                        font-family: $font-header;
                         font-size: 24px;
                         font-style: normal;
                         font-weight: 600;
                         line-height: 150%; /* 36px */
+                        @include for-size(tablet){
+                            font-size: 20px;
+                        }
+                        @include for-size(phone){
+                            font-size: 18px;
+                        }
                     }
                     span{
                         color: var(--Grey-60, #999);
-                        font-family: Urbanist;
+                        font-family: $font-header;
                         font-size: 18px;
                         font-style: normal;
                         font-weight: 500;
                         line-height: 150%; /* 27px */
+                        @include for-size(tablet){
+                            font-size: 16px;
+                        }
+                        @include for-size(phone){
+                            font-size: 14px;
+                        }
                         a{
-                            color: var(--Absolute-White, #FFF);
-                            font-family: Urbanist;
+                            color: $colorheader;
+                            font-family: $font-header;
                             font-size: 18px;
                             font-style: normal;
                             font-weight: 500;
                             line-height: 150%;
                             text-decoration-line: underline;
+                            @include for-size(tablet){
+                                font-size: 16px;
+                            }
+                            @include for-size(phone){
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
                 .card-body{
-                    display: flex;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
                     gap: 10px;
+                    @include for-size(phone){
+                        grid-template-columns: repeat(2, 1fr);
+                    }
                     .card-text{
                         display: flex;
                         align-items: center;
                         border-radius: 28px;
-                        gap: 2px;
                         border: 1px solid var(--Grey-15, #262626);
                         background: var(--Grey-10, #1A1A1A);
                         padding: 8px 14px;
+                        @include for-size(tablet){
+                            padding: 6px 14px;
+                        }
                         p{
-                            color: var(--Absolute-White, #FFF);
-                            font-family: Urbanist;
+                            color: $colorheader;
+                            font-family:$font-header;
                             font-style: normal;
                             font-weight: 500;
                             line-height: 150%; /* 27px */
@@ -69,24 +145,42 @@
                     display: flex;
                     align-items: center;
                     gap: 110px;
+                    // @include for-size(tablet){
+                    //     gap: 150px;
+                    // }
+                    // @include for-size(phone){
+                    //     gap: 200px;
+                    // }
                     .price{
                         display: flex;
                         flex-direction: column;
                         p{
                             color: var(--Grey-60, #999);
-                            font-family: Urbanist;
+                            font-family: $font-header;
                             font-size: 18px;
                             font-style: normal;
                             font-weight: 500;
                             line-height: 150%; /* 27px */
+                            @include for-size(tablet){
+                                font-size: 14px;
+                            }
+                            @include for-size(phone){
+                                font-size: 14px;
+                            }
                         }
                         span{
-                            color: var(--Absolute-White, #FFF);
-                            font-family: Urbanist;
+                            color: $colorheader;
+                            font-family: $font-header;
                             font-size: 24px;
                             font-style: normal;
                             font-weight: 600;
                             line-height: 150%; /* 36px */
+                            @include for-size(tablet){
+                                font-size: 20px;
+                            }
+                            @include for-size(phone){
+                                font-size: 18px;
+                            }
                         }
                     }
                     .btn{
@@ -105,6 +199,18 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: 150%; /* 27px */
+                        cursor: pointer;
+                        &:hover{
+                            background-color: $colorgrey20;
+                           }
+                        @include for-size(tablet){
+                            font-size: 14px;
+                            padding: 14px 20px;
+                        }
+                        @include for-size(phone){
+                            font-size: 14px;
+                            padding: 14px 20px;
+                        }
                        
                     }}
                 }

@@ -75,7 +75,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 162px;
-    background: var(--Grey-10, #1A1A1A);
+    background: $colorgrey10;
     @include for-size (tablet){
         padding: 14px 80px;
     }
@@ -103,6 +103,10 @@
             font-style: normal;
             font-weight: 500;
             line-height: 150%; /* 21px */
+            border: 1px solid transparent;
+            &:hover{
+                color:$colorgrey60;
+             }
             @include for-size(tablet){
                 font-size: 14px;
             }
@@ -113,12 +117,14 @@
             align-items: flex-start;
             gap: 10px;
             border-radius: 10px;
-            border: 1px solid var(--Grey-15, #262626);
-            background: var(--Grey-08, #141414);
+            border: 1px solid $colorgrey15;
+            background:$colorgrey08;
+      
             @include for-size (tablet){
                 padding: 12px 20px;
             }
         }
+    
     }
    @include for-size(phone){
     display: none;
@@ -133,8 +139,8 @@
     align-items: center;
     gap: 8px;
     border-radius: 10px;
-    border: 1px solid var(--Grey-15, #262626);
-    background: var(--Grey-08, #141414);
+    border: 1px solid $colorgrey15;
+    background:$colorgrey08;
     color: $colorheader;
     font-family: $font-header;
     font-size: 18px;
@@ -142,6 +148,11 @@
     font-weight: 500;
     line-height: 150%; /* 27px */
     cursor: pointer;
+    &:hover{
+        color:$colorwhite95;
+        background-color: $color65;
+    }
+
     @include for-size(tablet){
         font-size: 14px;
         padding: 14px 20px;
