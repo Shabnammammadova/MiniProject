@@ -109,8 +109,8 @@
                     align-items: center;
                     gap: 8px;
                     border-radius: 10px;
-                    border: 1px solid var(--Grey-15, #262626);
-                    background: var(--Grey-10, #1A1A1A);
+                    border: 1px solid $colorgrey15;
+                    background: $colorgrey10;
                     color: $colorheader;
                     font-family: $font-header;
                     font-size: 18px;
@@ -118,12 +118,13 @@
                     font-weight: 500;
                     line-height: 150%; /* 27px */
                     cursor: pointer;
+                    width: 127px;
                     &:hover{
                      background-color: $color65;
                     }
                     @include for-size(tablet){
                         padding: 14px 20px;
-                       
+                        font-size: 14px;
                     }
                     @include for-size(phone){
                    display: none;
@@ -612,7 +613,7 @@
                 font-weight: 500;
                 line-height: 150%; /* 27px */
                 cursor: pointer;
-                width: 196px;
+                width: 170px;
                 &:hover{
                  background-color: $color65;
                 }
@@ -1008,6 +1009,8 @@
                     font-weight: 500;
                     line-height: 150%; /* 27px */
                     border: transparent;
+                    cursor: pointer;
+                    width: 152px;
                     &:hover{
                         background-color: $color65;
                     }
@@ -1018,8 +1021,8 @@
                     }
                     @include for-size(phone){
                         font-size: 14px;
-                        width: 357px;
-                        padding-left: 120px;
+                        width: 100%;
+                        padding-left: 25px;
                     }
                  }
             }

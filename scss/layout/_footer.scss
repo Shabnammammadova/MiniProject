@@ -32,7 +32,8 @@
                  gap: 24px;
                 }
                 @include for-size(phone){
-                 gap: 20px;        
+                 gap: 20px;     
+                 width: 100%;   
                 }
                 .logo{
                     display: flex;
@@ -43,16 +44,18 @@
                     display: flex;
                     align-items: center;
                     position: relative;
+                    @include for-size(phone){
+                        left: 0;
+                    }
                     .letter{
                         position: absolute;
                         top: 20px;  
-                        margin-left: 8px;
+
                         @include for-size(tablet){
                         top: 15px;
                         }
                     }
                     input{
-                        margin-left: 6px;
                         display: flex;
                         width: 305px;
                         padding: 18px 24px;
@@ -68,21 +71,21 @@
                         font-weight: 500;
                         line-height: 24px; /* 171.429% */
                         letter-spacing: -0.084px;
-                        @include for-size(tablet){
-                        margin-left: 12px;   
+                        @include for-size(tablet){   
                         padding: 14px 20px;
                         gap: 6px;
                         }
                         @include for-size(phone){
                          padding: 14px 20px;
                          gap: 6px;
+                         padding-left: 30px;
                         }
                    
                     }
                     .send{
                         position: absolute;
                         top: 20px;
-                        left: 310px;
+                        left: 280px;
                         @include for-size(tablet){
                          top: 15px;
                         }
@@ -161,7 +164,7 @@
             }
             .navigation5{
                 @include for-size(phone){
-                   margin-top: -100px;
+                   margin-top: -140px;
                 }
            }
         }

@@ -705,8 +705,8 @@ table {
   align-items: center;
   gap: 8px;
   border-radius: 10px;
-  border: 1px solid var(--Grey-15, #262626);
-  background: var(--Grey-10, #1A1A1A);
+  border: 1px solid #262626;
+  background: #1A1A1A;
   color: var(--Absolute-White, #FFF);
   font-family: Urbanist;
   font-size: 18px;
@@ -714,6 +714,7 @@ table {
   font-weight: 500;
   line-height: 150%; /* 27px */
   cursor: pointer;
+  width: 127px;
 }
 .featured-section .container .featured-header .featured-info .right-side button:hover {
   background-color: #1A64FF;
@@ -721,6 +722,7 @@ table {
 @media (max-width: 1596px) {
   .featured-section .container .featured-header .featured-info .right-side button {
     padding: 14px 20px;
+    font-size: 14px;
   }
 }
 @media (max-width: 1200px) {
@@ -1287,7 +1289,7 @@ table {
   font-weight: 500;
   line-height: 150%; /* 27px */
   cursor: pointer;
-  width: 196px;
+  width: 170px;
 }
 .client-section .container .client-info .right-side button:hover {
   background-color: #1A64FF;
@@ -1758,6 +1760,8 @@ table {
   font-weight: 500;
   line-height: 150%; /* 27px */
   border: transparent;
+  cursor: pointer;
+  width: 152px;
 }
 .start-journey-section .container .start-journey .right-side button:hover {
   background-color: #1A64FF;
@@ -1772,8 +1776,8 @@ table {
 @media (max-width: 1200px) {
   .start-journey-section .container .start-journey .right-side button {
     font-size: 14px;
-    width: 357px;
-    padding-left: 120px;
+    width: 100%;
+    padding-left: 25px;
   }
 }
 
@@ -1829,6 +1833,7 @@ table {
 @media (max-width: 1200px) {
   .footer-section .container .footer .left-side {
     gap: 20px;
+    width: 100%;
   }
 }
 .footer-section .container .footer .left-side .logo {
@@ -1841,10 +1846,14 @@ table {
   align-items: center;
   position: relative;
 }
+@media (max-width: 1200px) {
+  .footer-section .container .footer .left-side .input {
+    left: 0;
+  }
+}
 .footer-section .container .footer .left-side .input .letter {
   position: absolute;
   top: 20px;
-  margin-left: 8px;
 }
 @media (max-width: 1596px) {
   .footer-section .container .footer .left-side .input .letter {
@@ -1852,7 +1861,6 @@ table {
   }
 }
 .footer-section .container .footer .left-side .input input {
-  margin-left: 6px;
   display: flex;
   width: 305px;
   padding: 18px 24px;
@@ -1871,7 +1879,6 @@ table {
 }
 @media (max-width: 1596px) {
   .footer-section .container .footer .left-side .input input {
-    margin-left: 12px;
     padding: 14px 20px;
     gap: 6px;
   }
@@ -1880,12 +1887,13 @@ table {
   .footer-section .container .footer .left-side .input input {
     padding: 14px 20px;
     gap: 6px;
+    padding-left: 30px;
   }
 }
 .footer-section .container .footer .left-side .input .send {
   position: absolute;
   top: 20px;
-  left: 310px;
+  left: 280px;
 }
 @media (max-width: 1596px) {
   .footer-section .container .footer .left-side .input .send {
@@ -1963,6 +1971,6 @@ table {
 }
 @media (max-width: 1200px) {
   .footer-section .container .footer .right-side .navigation5 {
-    margin-top: -100px;
+    margin-top: -140px;
   }
 }
