@@ -1,0 +1,170 @@
+.footer-section{
+  padding: 100px 162px;
+  @include for-size(tablet){
+    padding: 80px;
+  }
+  @include for-size(phone){
+    padding: 50px 16px;          
+  }
+    .container{
+        @include for-size(tablet){
+            width: 100%;
+        }
+        @include for-size(phone){
+            width: 100%;
+        }
+        .footer{
+            display: flex;
+            gap: 80px;
+            align-items: flex-start;
+            @include for-size(tablet){
+                gap: 80px;
+            }
+            @include for-size(phone){
+                gap: 50px;
+                flex-direction: column;  
+              }
+            .left-side{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                @include for-size(tablet){
+                 gap: 24px;
+                }
+                @include for-size(phone){
+                 gap: 20px;        
+                }
+                .logo{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+                .input{
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    .letter{
+                        position: absolute;
+                        top: 20px;  
+                        margin-left: 8px;
+                        @include for-size(tablet){
+                        top: 15px;
+                        }
+                    }
+                    input{
+                        margin-left: 6px;
+                        display: flex;
+                        width: 305px;
+                        padding: 18px 24px;
+                        align-items: center;
+                        gap: 10px;
+                        border-radius: 12px;
+                        border: 1px solid $colorgrey15;
+                        background: $colorgrey08;
+                        color: var(--Grey-60, #999);
+                        font-family: $font-header;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px; /* 171.429% */
+                        letter-spacing: -0.084px;
+                        @include for-size(tablet){
+                        margin-left: 12px;   
+                        padding: 14px 20px;
+                        gap: 6px;
+                        }
+                        @include for-size(phone){
+                         padding: 14px 20px;
+                         gap: 6px;
+                        }
+                   
+                    }
+                    .send{
+                        position: absolute;
+                        top: 20px;
+                        left: 310px;
+                        @include for-size(tablet){
+                         top: 15px;
+                        }
+                    }
+                }
+            }
+            .right-side{
+                // display: flex;
+                // justify-content: space-between;
+                // align-items: flex-start;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                flex: 1 0 0;
+                @include for-size(phone){
+                    gap: 20px;
+                    // align-self: stretch;
+                    // flex-direction: column;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .navigation{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    @include for-size(tablet){
+                    gap: 24px;
+                    }
+                    // @include for-size(phone){
+                    //     display: grid;
+                    //     // grid-template-columns: repeat(4, 1fr);
+                    //     grid-column:span 4 ;
+                    // }
+                  
+                    p{
+                        color: var(--Grey-60, #999);
+                        font-family: $font-header;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px; /* 133.333% */
+                        letter-spacing: -0.108px;
+                        @include for-size(tablet){
+                        font-size: 18px;
+                        }
+                    }
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        @include for-size(tablet){
+                        gap: 16px;
+                        }
+                        @include for-size(phone){   
+                             border-bottom: 1px solid $colorgrey15;
+                        }
+                        li{
+                            a{
+                                color: $colorheader;
+                                font-family: $font-header;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 24px; /* 150% */
+                                letter-spacing: -0.096px;
+                                text-decoration: none;
+                                @include for-size(tablet){
+                                font-size: 16px;
+                                &:hover{
+                                    color: #703BF7;
+                                }
+                                }
+                        }
+                    }
+                }
+                
+            }
+            .navigation5{
+                @include for-size(phone){
+                   margin-top: -100px;
+                }
+           }
+        }
+    }
+}
+}

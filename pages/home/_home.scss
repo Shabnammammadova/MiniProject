@@ -1,0 +1,1028 @@
+.featured-section{
+    margin-top: 116px;
+    @include for-size(tablet){
+        margin-top: 90px;
+    }
+    @include for-size(phone){
+        margin-top: 50px;
+    }
+    .container{
+        @include for-size(tablet){
+            width: 100%;
+        }
+        @include for-size(phone){
+            width: 100%;
+        }
+    .featured-header{
+        // padding: 14px 20px;
+         width: 100%;
+        .stars{
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            width: 100px;
+            .img1{
+                width: 30px;
+                height: 30px;
+                @include for-size(tablet){
+                    width: 24px;
+                    height: 24px;
+                }
+                @include for-size(phone){
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .img2{
+                width: 18px;
+                height: 18px;
+                @include for-size(tablet){
+                    width: 24px;
+                    height: 24px;
+                }
+                @include for-size(phone){
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .img3{
+                width: 8.4px;
+                height: 8.4px;
+                @include for-size(tablet){
+                    width: 24px;
+                    height: 24px;
+                }
+                @include for-size(phone){
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        .featured-info{
+            display: flex;
+            align-items: center;
+            gap:150px ;
+            @include for-size(phone){
+                gap: 0;
+            }
+            .left-side{
+                display: flex;
+                flex-direction: column;
+                gap:14px ;
+                @include for-size(tablet){
+                    gap:10px
+                }
+                @include for-size(phone){
+                    gap:6px
+                }
+                p{
+                    color: $colorheader;
+                    font-family:$font-header;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 72px */
+                    @include for-size(tablet){
+                        font-size:38px;
+                    }
+                }
+                span{
+                    color: var(--Grey-60, #999);
+                    font-family: $font-header;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 27px */
+                    @include for-size(tablet){
+                        font-size:16px;
+                    }
+                    @include for-size(phone){
+                      font-size: 14px;
+                    }
+                }
+            }
+            .right-side{
+                margin-top: 60px;
+                button{
+                    display: flex;
+                    padding: 18px 24px;
+                    align-items: center;
+                    gap: 8px;
+                    border-radius: 10px;
+                    border: 1px solid var(--Grey-15, #262626);
+                    background: var(--Grey-10, #1A1A1A);
+                    color: $colorheader;
+                    font-family: $font-header;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 27px */
+                    cursor: pointer;
+                    &:hover{
+                     background-color: $color65;
+                    }
+                    @include for-size(tablet){
+                        padding: 14px 20px;
+                       
+                    }
+                    @include for-size(phone){
+                   display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// Number line
+
+.number-line{
+    margin-top: 50px;
+    @include for-size(tablet){
+        margin-top: 40px;
+    }
+    @include for-size(phone){
+        margin-top: 16px;
+    }
+.container{
+    @include for-size(tablet){
+      width: 100%;
+    }
+    @include for-size(phone){
+         width: 100%;       
+    }
+
+    .number{
+        padding-top: 20px;
+        padding-bottom: 150px;
+        border-top: 1px solid $colorgrey15;
+        @include for-size(tablet){
+            padding-top: 16px;
+            padding-bottom: 120px;
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include for-size(phone){
+                
+            }
+            .left-side{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                p{
+                    color: var(--Grey-60, #999);
+                    font-family: $font-header;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                    @include for-size(tablet){
+                         font-size: 16px;
+                    }
+                    span {
+                        color: $colorheader;
+                        font-family: $font-header;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; /* 30px */
+                        @include for-size(tablet){
+                            font-size: 16px;
+                       }
+                    }
+                    @include for-size(phone){
+                        display: none;
+                    }
+                }
+                button {
+                    display: flex;
+                    padding: 14px 20px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    align-self: stretch;
+                    color: $colorheader;
+                    font-family: $font-header;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 21px */
+                    border-radius: 8px;
+                    border: 1px solid $colorgrey15;
+                    background: $colorgrey10;
+                    display: none;
+                    @include for-size(phone){
+                    display: initial;
+                    }
+                }
+               
+            }
+            .right-side{
+                display: flex;
+                align-items: center;
+                .image{
+                 display: flex;
+                 gap: 10px;
+                 align-items: center;
+                 
+                img{
+                    padding: 14px;
+                    border-radius: 69px;
+                    border: 1px solid $colorgrey15;
+                    &:hover{
+                        background-color:$color65;
+                    }
+                    @include for-size(tablet){
+                        padding: 10px;
+                    }
+                   
+                }
+                p{
+                    color: var(--Grey-60, #999);
+                    font-family: $font-header;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                    display: none;
+                    @include for-size(tablet){
+                         font-size: 16px;
+                    }
+                    @include for-size(phone){
+                        display: initial;
+                    }
+                    span {
+                        color: $colorheader;
+                        font-family: $font-header;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; /* 30px */
+                        @include for-size(tablet){
+                            font-size: 16px;
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
+}}
+
+
+// Featured cards
+.featured-cards{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding: 0 ;
+    @include for-size(tablet){
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    @include for-size(phone){
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .container{
+        // width: 1596px;
+        @include for-size(tablet){
+            width: 100%;
+        }
+        @include for-size(phone){
+            width: 358px;
+        }
+        .cards{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            @include for-size(tablet){
+                gap: 20px;
+            }
+            @include for-size(phone){
+                flex-direction: column;
+            }
+            .card{
+                display: flex;
+                padding: 40px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 30px;
+                flex: 1 0 0;
+                border-radius: 12px;
+                border: 1px solid var(--Grey-15, #262626);
+                background: var(--Grey-08, #141414);
+                width: 100%;
+                @include for-size(tablet){
+                    padding: 30px;
+                    gap: 20px;
+                    width: 100%;
+                }
+               @include for-size(phone){
+                padding: 24px;
+                gap: 16px;
+                width: 100%;
+               }
+               .card-info{
+                width: 100%;
+                 @include for-size(tablet){
+                    width: 100%;
+                }
+                // @include for-size(phone){
+                //     width: 100%;
+                // }
+                img{
+                    width: 100%;
+                    @include for-size(tablet){
+                        width: 100%;
+                    }
+                    // @include for-size(phone){
+                    //     width: 100%;
+                    // }
+                }
+               }
+                .card-header{
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        color: $colorheader;
+                        font-family: $font-header;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 150%; /* 36px */
+                        @include for-size(tablet){
+                            font-size: 20px;
+                        }
+                        @include for-size(phone){
+                            font-size: 18px;
+                        }
+                    }
+                    span{
+                        color: var(--Grey-60, #999);
+                        font-family: $font-header;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; /* 27px */
+                        @include for-size(tablet){
+                            font-size: 16px;
+                        }
+                        @include for-size(phone){
+                            font-size: 14px;
+                        }
+                        a{
+                            color: $colorheader;
+                            font-family: $font-header;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%;
+                            text-decoration-line: underline;
+                            @include for-size(tablet){
+                                font-size: 16px;
+                            }
+                            @include for-size(phone){
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .card-body{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 10px;
+                    @include for-size(phone){
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .card-text{
+                        display: flex;
+                        align-items: center;
+                        border-radius: 28px;
+                        border: 1px solid $colorgrey15;
+                        background: $colorgrey10;
+                        padding: 8px 14px;
+                        @include for-size(tablet){
+                            padding: 6px 14px;
+                        }
+                        p{
+                            color: $colorheader;
+                            font-family:$font-header;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%; /* 27px */
+                            font-size: 14px;
+                            @include for-size(tablet){
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .card-footer{
+                    display: flex;
+                    align-items: center;
+                    gap: 50px;
+                    @include for-size(tablet){
+                        gap: 40px;
+                    }
+                    @include for-size(phone){
+                        gap: 30px;
+                    }
+                    .price{
+                        display: flex;
+                        flex-direction: column;
+                        p{
+                            color: var(--Grey-60, #999);
+                            font-family: $font-header;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%; /* 27px */
+                            @include for-size(tablet){
+                                font-size: 14px;
+                            }
+                            @include for-size(phone){
+                                font-size: 14px;
+                            }
+                        }
+                        span{
+                            color: $colorheader;
+                            font-family: $font-header;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 150%; /* 36px */
+                            @include for-size(tablet){
+                                font-size: 20px;
+                            }
+                            @include for-size(phone){
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .btn{
+                    button{
+                        display: flex;
+                        padding: 18px 24px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        border: transparent;
+                        border-radius: 10px;
+                        background: var(--Purple-60, #703BF7);
+                        color:$colorheader;
+                        font-family: Urbanist;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; /* 27px */
+                        cursor: pointer;
+                        &:hover{
+                            background-color: $colorgrey20;
+                           }
+                        @include for-size(tablet){
+                            font-size: 14px;
+                            padding: 14px 20px;
+                        }
+                        @include for-size(phone){
+                            font-size: 14px;
+                            padding: 14px 20px;
+                        }
+                       
+                    }}
+                }
+            }
+        }
+    }
+}
+
+// Client section
+
+
+.client-section{
+    .container{
+        @include for-size(tablet){
+            width: 100%;
+        }
+        @include for-size(phone){
+            width: 100%;
+        }
+    
+    .stars{
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        width: 100px;
+        .img1{
+            width: 30px;
+            height: 30px;
+            @include for-size(tablet){
+                width: 24px;
+                height: 24px;
+            }
+            @include for-size(phone){
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .img2{
+            width: 18px;
+            height: 18px;
+            @include for-size(tablet){
+                width: 14px;
+                height: 14px;
+            }
+            @include for-size(phone){
+                width: 12px;
+                height: 12px;
+            }
+        }
+        .img3{
+            width: 8.4px;
+            height: 8.4px;
+            @include for-size(tablet){
+                width: 6.72px;
+                height: 6.72px;
+            }
+            @include for-size(phone){
+                width: 5.6px;
+                height: 5.6px;
+            }
+        }
+    }
+    .client-info{
+        display: flex;
+        align-items: center;
+        gap:150px ;
+        @include for-size(phone){
+            gap: 0;
+        }
+        .left-side{
+            display: flex;
+                    flex-direction: column;
+                    gap:14px ;
+                    @include for-size(tablet){
+                        gap:10px
+                    }
+                    @include for-size(phone){
+                        gap:6px
+                    }
+            p{
+                color: $colorheader;
+                font-family: $font-header;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 72px */
+                @include for-size(tablet){
+                    font-size:38px;
+                }
+            }
+            span{
+                color: var(--Grey-60, #999);
+                font-family: $font-header;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%; /* 27px */
+                @include for-size(tablet){
+                    font-size:16px;
+                }
+                @include for-size(phone){
+                  font-size: 14px;
+                }
+            }
+        }
+        .right-side{
+            margin-top: 60px;
+            button{
+                display: flex;
+                padding: 18px 24px;
+                align-items: center;
+                gap: 8px;
+                border-radius: 10px;
+                border: 1px solid $colorgrey15;
+                background:$colorgrey10;
+                color: $colorheader;
+                font-family: $font-header;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%; /* 27px */
+                cursor: pointer;
+                width: 196px;
+                &:hover{
+                 background-color: $color65;
+                }
+                @include for-size(tablet){
+                    padding: 14px 20px;
+                    font-size: 14px;
+                }
+                @include for-size(phone){
+               display: none;
+                }
+            }
+
+        }
+    }
+}
+}
+
+
+// Client card
+
+
+.client-cards{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    @include for-size(tablet){
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    @include for-size(phone){
+        margin-top: 40px;
+        margin-bottom: 30px;
+        }
+    .container{
+        @include for-size(tablet){
+            width: 100%;
+            }
+            @include for-size(phone){
+                width: 358px;
+            }
+        .cards{
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            @include for-size(tablet){
+                gap: 20px;
+            }
+            @include for-size(phone){
+            flex-direction: column;
+            // width: 358px;
+            }
+            .card{
+                display: flex;
+                padding: 50px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 40px;
+                flex: 1 0 0;
+                border-radius: 12px;
+                border: 1px solid $colorgrey15;
+                background: $colorgrey08;
+                @include for-size(tablet){
+                    padding: 40px;
+                    gap: 30px;
+                }
+                @include for-size(phone){
+                    padding: 30px;
+                    gap: 24px;
+                }
+                .stars{
+                    display: flex;
+                    gap: 10px;
+                    @include for-size(tablet){
+                        gap: 8px;
+                    }
+                    @include for-size(phone){
+                        gap: 8px;
+                    }
+                    img{
+                        border-radius: 100px;
+                        border: 1px solid $colorgrey15;
+                        background: $colorgrey10;
+                        padding: 10px;
+                        @include for-size(tablet){
+                            padding: 9px;
+                        }
+                        @include for-size(phone){
+                            padding: 6px;
+                        }
+                    }
+                }
+                .card-header{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 14px;
+                    @include for-size(tablet){
+                        gap: 10px;
+                    }
+                    @include for-size(phone){
+                        gap: 6px;
+                    }
+                    // width: 412px;
+                    p{
+                        color: $colorheader;
+                        font-family: $font-header;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 150%; /* 36px */
+                        @include for-size(tablet){
+                            font-size: 20px;
+                        }
+                        @include for-size(phone){
+                           font-size: 18px;
+                        }
+                    }
+                    span{
+                        color: $colorheader;
+                        font-family: $font-header;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; /* 27px */
+                        @include for-size(tablet){
+                            font-size: 16px;
+                        }
+                        @include for-size(phone){
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .card-footer{
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    @include for-size(tablet){
+                        gap: 12px;
+                    }
+                    @include for-size(phone){
+                        gap: 10px;
+                    }
+                    .user-name{
+                        p{
+                            color: $colorheader;
+                            font-family: $font-header;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%; /* 30px */
+                            @include for-size(tablet){
+                                font-size: 18px;
+                            }
+                            @include for-size(phone){
+                                font-size: 16px;
+                            }
+
+                        }
+                        span{
+                            color: var(--Grey-60, #999);
+                            font-family: $font-header;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%; /* 27px */
+                            @include for-size(tablet){
+                                font-size: 16px;
+                            }
+                            @include for-size(phone){
+                                font-size: 14px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// Frequently card
+
+.frequently-card{
+    margin-top: 80px;
+    @include for-size(tablet){
+        margin-top: 60px;
+    }
+    @include for-size(phone){
+        margin-top: 40px;
+    }
+    .container{
+        @include for-size(tablet){
+            width: 100%;
+        }
+            @include for-size(phone){
+                width: 358px;
+            }
+        .cards{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            @include for-size(tablet){
+                gap: 20px;
+            }
+            @include for-size(phone){
+                flex-direction: column;
+            }
+            .card{
+                display: flex;
+                padding: 50px;
+                flex: 1 0 0;
+                border-radius: 12px;
+                border: 1px solid $colorgrey15;
+                background: $colorgrey08;
+                @include for-size(tablet){
+                    padding: 40px;
+                    gap: 24px;
+                    border-radius: 10px;
+                }
+                @include for-size(phone){
+                    padding: 30px;
+                    gap: 20px;
+                }
+            .card-header{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 30px;
+                @include for-size(tablet){
+                    gap: 24px;
+                }
+                @include for-size(phone){
+                    gap: 20px;
+                }
+                p{
+                    color: $colorheader;
+                    font-family: $font-header;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 36px */
+                    @include for-size(tablet){
+                        font-size: 20px;
+                    }
+                    @include for-size(phone){
+                        font-size: 18px;
+                    }
+                }
+                span{
+                    color: var(--Grey-60, #999);
+                    font-family: $font-header;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 27px */
+                    letter-spacing: -0.108px;
+                    @include for-size(tablet){
+                        font-size: 16px;
+                    }
+                    @include for-size(phone){
+                        font-size: 14px;
+                    }
+                }
+                button{
+                    display: flex;
+                    padding: 18px 24px;
+                    align-items: flex-start;
+                    gap: 10px;
+                    border-radius: 10px;
+                    border: 1px solid $colorgrey15;
+                    background: $colorgrey10;
+                    color: $colorheader;
+                    font-family: $font-header;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 131%; /* 23.58px */
+                    letter-spacing: -0.108px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $color65;
+                    }
+                    @include for-size(tablet){
+                        padding: 14px 20px;
+                        border-radius: 8px;
+                        font-size: 14px;
+                    }
+                    @include for-size(phone){
+                        padding: 14px 20px;
+                        border-radius: 8px;
+                        font-size: 14px;
+                        width: 298px;
+                        text-align: center;
+                        padding-left: 110px;
+                    }
+                }
+            }
+           
+            }
+            .card2{
+                height: 375.78px;
+                @include for-size(tablet){
+                    height: 100%;
+                }
+                @include for-size(phone){
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+// Start journey section
+
+
+.start-journey-section{
+    // background-image: url('~assets/images/home/vector.png');
+    padding: 100px 162px;
+    border-top: 1px solid $colorgrey15;
+    border-bottom: 1px solid $colorgrey15;
+    margin-top: 96px;
+    @include for-size(tablet){
+        padding: 60px 80px;
+        margin-top: 72px;
+    }
+    @include for-size(phone){
+        padding: 50px 16px;
+        margin-top: 50px;
+    }
+    .container{
+        @include for-size(tablet){
+            width: 100%;
+        }
+        @include for-size(phone){
+            width: 100%;
+        }
+        .start-journey{
+            display: flex;
+            align-items: center;
+            gap: 250px;
+            @include for-size(tablet){
+                gap: 150px;
+            }
+            @include for-size(phone){
+                gap: 30px;
+                flex-direction: column;
+            }
+            .left-side{
+                 p{
+                    color:$colorheader;
+                    font-family: $font-header;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 72px */
+                    @include for-size(tablet){
+                        font-size: 38px;
+                    }
+                    @include for-size(phone){
+                        font-size: 28px;
+                    }
+                 }
+                 span{
+                    color: var(--Grey-60, #999);
+                    font-family:$font-header;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 27px */
+                    @include for-size(tablet){
+                        font-size: 16px;
+                    }
+                    @include for-size(phone){
+                        font-size: 14px;
+                    }
+                 }
+            }
+            .right-side{
+                 button{
+                    display: flex;
+                    padding: 18px 24px;
+                    align-items: center;
+                    gap: 8px;
+                    border-radius: 10px;
+                    background: var(--Purple-60, #703BF7);
+                    color: $colorheader;
+                    font-family: $font-header;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 27px */
+                    border: transparent;
+                    &:hover{
+                        background-color: $color65;
+                    }
+                    @include for-size(tablet){
+                        padding: 14px 20px;
+                        font-size: 14px;
+                        border-radius: 8px;
+                    }
+                    @include for-size(phone){
+                        font-size: 14px;
+                        width: 357px;
+                        padding-left: 120px;
+                    }
+                 }
+            }
+        }
+    }
+}

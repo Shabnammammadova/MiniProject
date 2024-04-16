@@ -19,6 +19,7 @@
             
             @include for-size(phone){
                 padding:0;
+                margin-top: -100px;
               }
         .p1{
             color: $colorheader;
@@ -209,3 +210,10 @@
             }
         }
 }
+
+
+
+
+
+
+
