@@ -104,6 +104,17 @@
             font-weight: 500;
             line-height: 150%; /* 21px */
             border: 1px solid transparent;
+            animation-name: navbarlink;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            @keyframes navbarlink {
+                from{
+                color: $color60;
+                }
+                to{
+                color: $color90 ;
+                }
+            }
             &:hover{
                 color:$colorgrey60;
              }
@@ -148,9 +159,21 @@
     font-weight: 500;
     line-height: 150%; /* 27px */
     cursor: pointer;
+    animation-name: button;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    @keyframes button {
+        from{
+            background: radial-gradient(circle, rgba(43,95,156,1) 0%, rgba(87,76,208,1) 46%, rgba(124,122,145,1) 95%);
+        }
+        to{
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+    }
     &:hover{
         color:$colorwhite95;
         background-color: $color65;
+        
     }
 
     @include for-size(tablet){
