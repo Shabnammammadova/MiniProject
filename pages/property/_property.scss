@@ -673,3 +673,479 @@
 }
 }
 }
+
+
+
+// Let make it happen
+
+
+.let-happen-section{
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-radius: 12px;
+    border: 1px solid $colorgrey15;
+    margin-top: 80px;
+    @include for-size(tablet){
+        padding: 50px;
+        gap: 30px;
+        margin-top: 60px;
+    }
+    @include for-size(phone){
+        padding: 20px;
+        margin-top: 40px;
+        
+    }
+    .container{
+        @include for-size(tablet){
+           width: 100%;
+        }
+        @include for-size(phone){
+            width: 100%;
+        }
+    }
+    .let-happen{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        @include for-size(tablet){
+            gap: 30px;
+        }
+        @include for-size(phone){
+            gap: 20px;
+            width: 317px;
+        }
+        .top-side{
+            display: flex;
+            align-items: flex-start;
+            gap: 50px;
+            align-self: stretch;
+            @include for-size(tablet){
+                gap: 30px;
+            }
+            @include for-size(phone){
+                gap: 20px;
+                flex-direction: column;
+                width: 317px;
+            }
+            .input{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                flex: 1 0 0;
+                @include for-size(tablet){
+                    gap: 14px;
+                }
+                @include for-size(phone){
+                    gap: 10px;
+                    width: 317px;
+                }
+                p{
+                    color: $colorheader;
+                    font-family:$font-header;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 30px */
+                    @include for-size(tablet){
+                        font-size: 16px;
+                    }
+                    @include for-size(phone){
+                        font-size: 16px;
+                    }
+                }
+                span{
+                    color: var(--Grey-40, #666);
+                    font-family: $font-header;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px; /* 111.111% */
+                    display: flex;
+                    padding: 24px 20px;
+                    align-items: center;
+                    gap: 12px;
+                    align-self: stretch;
+                    border-radius: 8px;
+                    border: 1px solid $colorgrey15;
+                    background: $colorgrey10;
+                   
+                    @include for-size(tablet){
+                        font-size: 14px;
+                        padding: 16px 20px;
+                    }
+                    @include for-size(phone){
+                        padding: 16px 20px;
+                    }
+                }
+            }
+        }
+        .middle-side{
+            display: flex;
+            align-items: flex-start;
+            gap: 50px;
+            align-self: stretch;
+            @include for-size(tablet){
+                gap: 30px;
+            }
+            @include for-size(phone){
+                gap: 20px;
+                flex-direction: column;
+                width: 317px;
+            }
+            .input{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                flex: 1 0 0;
+                @include for-size(tablet){
+                    gap: 14px;
+                }
+                @include for-size(phone){
+                    gap: 10px;
+                    width: 317px;
+                }
+                p{
+                    color: $colorheader;
+                    font-family:$font-header;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 30px */
+                    @include for-size(tablet){
+                        font-size: 16px;
+                    }
+                    @include for-size(phone){
+                        font-size: 16px;
+                    }
+                }
+                span{
+                    display: flex;
+                    padding: 24px 20px;
+                    align-items: center;
+                    gap: 12px;
+                    align-self: stretch;
+                    justify-content: space-between;
+                    border-radius: 8px;
+                    border: 1px solid $colorgrey15;
+                    background: $colorgrey10;
+                    @include for-size(tablet){
+                        font-size: 14px;
+                        padding: 16px 20px;
+                    }
+                    @include for-size(phone){
+                        padding: 16px 20px;
+                    }
+                    p{
+                        color: var(--Grey-40, #666);
+                        font-family: $font-header;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 20px; /* 111.111% */
+                        @include for-size(tablet){
+                            font-size: 14px;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .bottom-side{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 50px;
+            align-self: stretch;
+            @include for-size(tablet){
+                gap: 30px;
+            }
+            @include for-size(phone){
+                gap: 20px;
+                flex-direction: column;
+                width: 317px;
+            }
+            .input{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                flex: 1 0 0;
+                @include for-size(tablet){
+                    gap: 14px;
+                }
+                @include for-size(phone){
+                    gap: 10px;
+                    width: 317px;
+                }
+                p{
+                    color: $colorheader;
+                    font-family: $font-header;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 30px */
+                    @include for-size(tablet){
+                        font-size: 16px;
+                    }
+                    @include for-size(phone){
+                        font-size: 16px;
+                    }
+                }
+                span{
+                    display: flex;
+                    padding: 22px 20px;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 12px;
+                    align-self: stretch;
+                    border-radius: 8px;
+                    border: 1px solid $colorgrey15;
+                    background: $colorgrey10;
+                    @include for-size(tablet){
+                        padding: 16px 20px;
+                    }
+                    p{
+                        color: var(--Grey-40, #666);
+                        font-family: $font-header;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 20px; /* 111.111% */
+                        @include for-size(tablet){
+                            font-size: 14px;
+                        }
+                        @include for-size(phone){
+                            padding: 16px 20px;
+                        }
+                    }
+                }
+                .spans{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 16px;
+                    align-self: stretch;
+                    .span{
+                        display: flex;
+                        padding: 22px 24px;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 12px;
+                        flex: 1 0 0;
+                        border-radius: 8px;
+                        border: 1px solid $colorgrey15;
+                        background: $colorgrey10;
+                        @include for-size(tablet){
+                            padding: 16px 20px;
+                            gap: 6px;
+                        }
+                        @include for-size (phone){
+                            padding: 16px 20px;
+                            gap: 6px;
+                        }
+                        .p1{
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+                            @include for-size(tablet){
+                               gap: 6px;
+                            }
+                            @include for-size(phone){
+                                gap: 6px;
+                             }
+                            p{
+                                color: var(--Grey-40, #666);
+                                font-family: $font-header;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 20px; /* 111.111% */
+                                @include for-size(tablet){
+                                    font-size: 14px;
+                                }
+                                @include for-size(phone){
+                                    font-size: 14px;
+                                }
+                            }
+                            img{
+                                @include for-size(phone){
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                        .p2{
+                            img{
+                                @include for-size(phone){
+                                    width: 10px;
+                                    height: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .last-side{
+            align-self: stretch;
+            .message{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                align-self: stretch;
+                @include for-size(tablet){
+                    gap: 14px;
+                }
+                @include for-size(phone){
+                    gap: 10px;
+                    width: 317px;
+                }
+                .top{
+               p{
+                color: $colorheader;
+                font-family: $font-header;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 30px */
+                @include for-size(tablet){
+                    font-size: 16px;
+                }
+                @include for-size(phone){
+                    font-size: 16px;
+                }
+               }
+            }
+            .bottom {
+                display: flex;
+                height: 170px;
+                padding: 24px 20px;
+                align-items: flex-start;
+                gap: 12px;
+                align-self: stretch;
+                border-radius: 8px;
+                border: 1px solid $colorgrey15;
+                background:$colorgrey10;
+                @include for-size(tablet){
+                    height: 122px;
+                    padding: 16px 20px;
+                }
+                @include for-size(tablet){
+                    height: 90px;
+                    padding: 16px 20px;
+                }
+                p{
+                    color: var(--Grey-40, #666);
+                    font-family: Urbanist;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px; /* 111.111% */
+                    @include for-size(tablet){
+                    font-size: 14px;
+                    }
+                    @include for-size(phone){
+                        font-size: 14px;
+                        }
+                }
+            }
+        }
+        }
+        .end-side{
+           align-self: stretch;
+
+            .inputs{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+                align-self: stretch;
+                @include for-size(tablet){
+                    gap: 50px;
+                }
+                @include for-size(phone){
+                    gap: 20px;
+                    flex-direction: column;
+                    width: 317px;
+                }
+                .input1{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    flex: 1 0 0;
+                    @include for-size(tablet){
+                      gap: 6px;
+                    }
+                    @include for-size(phone){
+                        gap: 6px;
+                      }
+                    span{
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 4px;
+                        border: 1px solid $colorgrey15;
+                        background: $colorgrey10;
+                        @include for-size(tablet){
+                          width: 24px;
+                          height: 24px;
+                        }
+                        @include for-size(phone){
+                            width: 24px;
+                          height: 24px;
+                          }
+                    }
+                    p{
+                        color: var(--Grey-60, #999);
+                        font-family: $font-header;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%;
+                        @include for-size(tablet){
+                         font-size: 16px;
+                        }
+                        @include for-size(phone){
+                            font-size: 14px;
+                           }
+                    }
+                }
+                .input2{
+                    display: flex;
+                    padding: 18px 46px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 67px;
+                    border-radius: 8px;
+                    background: var(--Purple-60, #703BF7);
+                    color:$colorheader;
+                    font-family: $font-header;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px; /* 133.333% */
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $color65;
+                    }
+                    @include for-size(tablet){
+                        padding: 14px 34px;
+                        gap: 67px;
+                    }
+                    @include for-size(phone){
+                        padding: 14px 34px;
+                        gap: 67px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
