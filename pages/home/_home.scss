@@ -589,7 +589,7 @@
             width: 100%;
         }
             @include for-size(phone){
-                width: 358px;
+                width: 390px;
             }
         .cards{
             display: flex;
@@ -802,7 +802,7 @@
                     @include for-size(phone){
                         font-size: 14px;
                         width: 100%;
-                        padding-left: 25px;
+                        padding:14px 20px
                     }
                  }
             }

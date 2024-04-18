@@ -1,11 +1,11 @@
-.footer-section{
-  padding: 100px 162px;
-  @include for-size(tablet){
-    padding: 80px;
-  }
-  @include for-size(phone){
-    padding: 50px 16px;          
-  }
+// Footer
+
+
+footer{
+    margin-top: 100px;
+    @include for-size(tablet){
+        margin-top: 80px;
+    }
     .container{
         @include for-size(tablet){
             width: 100%;
@@ -13,96 +13,83 @@
         @include for-size(phone){
             width: 358px;
         }
-        .footer{
+        .footer-start{
             display: flex;
             gap: 80px;
-            align-items: flex-start;
             @include for-size(tablet){
                 gap: 80px;
             }
             @include for-size(phone){
                 gap: 50px;
-                flex-direction: column;  
-              }
-            .left-side{
-                display: flex;
                 flex-direction: column;
-                gap: 30px;
-                @include for-size(tablet){
-                 gap: 24px;
-                }
-                @include for-size(phone){
-                 gap: 20px;     
-                 width: 100%;   
-                }
-                .logo{
+            }
+        .left-side{
+              display: flex;
+              flex-direction: column;
+              gap: 30px;
+              @include for-size(tablet){
+                gap: 24px;
+            }
+                .top{
                     display: flex;
                     align-items: center;
-                    gap: 5px;
+                    gap: 10px;
+                    @include for-size(tablet){
+                        gap: 7px;
+                    }
                 }
-                .input{
+                .bottom{
                     display: flex;
+                    justify-content: space-between;
+                    width: 423px;
+                    padding: 18px 24px;
                     align-items: center;
-                    position: relative;
-                    @include for-size(phone){
-                        left: 0;
-                    }
-                    .letter{
-                        position: absolute;
-                        top: 20px;  
-
-                        @include for-size(tablet){
-                        top: 15px;
-                        }
-                    }
-                    input{
-                        display: flex;
+                    gap: 10px;
+                    border-radius: 12px;
+                    border: 1px solid $colorgrey15;
+                    background: $colorgrey08;
+                    @include for-size(tablet){
+                        padding: 14px 20px;
                         width: 305px;
-                        padding: 18px 24px;
+                        gap: 6px;
+                        border-radius: 8px;
+                    }
+                    @include for-size(phone){
+                        padding: 14px 20px ;
+                        gap: 6px;
+                        width: 357px;
+                        border-radius: 8px;
+                    }
+                    .p1{
+                        display: flex;
                         align-items: center;
                         gap: 10px;
-                        border-radius: 12px;
-                        border: 1px solid $colorgrey15;
-                        background: $colorgrey08;
-                        color: var(--Grey-60, #999);
-                        font-family: $font-header;
-                        font-size: 18px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 24px; /* 171.429% */
-                        letter-spacing: -0.084px;
-                        @include for-size(tablet){   
-                        padding: 14px 20px;
-                        gap: 6px;
-                        }
-                        @include for-size(phone){
-                         padding: 14px 20px;
-                         gap: 6px;
-                         padding-left: 30px;
-                        }
-                   
-                    }
-                    .send{
-                        position: absolute;
-                        top: 20px;
-                        left: 280px;
                         @include for-size(tablet){
-                         top: 15px;
+                            gap: 6px;
                         }
+                         p{
+                            color: var(--Grey-60, #999);
+                            font-family:$font-header;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 24px; /* 133.333% */
+                            letter-spacing: -0.108px;
+                            @include for-size(tablet){
+                                font-size: 14px;
+                            }
+                         }
                     }
                 }
-            }
-            .right-side{
-                // display: flex;
-                // justify-content: space-between;
-                // align-items: flex-start;
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
+        }
+        .right-side{
+        
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
                 flex: 1 0 0;
                 @include for-size(phone){
-                    gap: 20px;
-                    // align-self: stretch;
-                    // flex-direction: column;
+                    gap: 40px;
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                 }
@@ -113,12 +100,6 @@
                     @include for-size(tablet){
                     gap: 24px;
                     }
-                    // @include for-size(phone){
-                    //     display: grid;
-                    //     // grid-template-columns: repeat(4, 1fr);
-                    //     grid-column:span 4 ;
-                    // }
-                  
                     p{
                         color: var(--Grey-60, #999);
                         font-family: $font-header;
@@ -129,6 +110,9 @@
                         letter-spacing: -0.108px;
                         @include for-size(tablet){
                         font-size: 18px;
+                        }
+                        @include for-size(phone){
+                           font-size: 16px;
                         }
                     }
                     ul{
@@ -151,25 +135,84 @@
                                 line-height: 24px; /* 150% */
                                 letter-spacing: -0.096px;
                                 text-decoration: none;
-                                @include for-size(tablet){
-                                font-size: 16px;
                                 &:hover{
                                     color: #703BF7;
                                     box-shadow: 0 2px 0 0 currentcolor;
                                 }
+                                @include for-size(tablet){
+                                font-size: 16px;
                                 }
+                                @include for-size(phone){
+                                    font-size: 16px;
+                                 }
                         }
                     }
                 }
-                
+
             }
             .navigation5{
                 @include for-size(phone){
                    position: relative;
-                   bottom: 100px;
+                   bottom: 110px;
                 }
            }
         }
+        }
+
+
     }
+    .footer-end{
+        margin-top: 100px;
+        padding: 16px 0;
+        background: $colorgrey10;
+        .container{
+            .footer{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+        .left-side{
+            display: flex;
+            padding: 10px 0px;
+            align-items: flex-start;
+            gap: 38px;
+            p{
+                color: $colorheader;
+                font-family: $font-header;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; /* 133.333% */
+                letter-spacing: -0.108px;
+            }
+            span{
+                color: $colorheader;
+                font-family: $font-header;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; /* 133.333% */
+                letter-spacing: -0.108px;
+            }
+        }
+        .right-side{
+            display: flex;
+            padding: 10px 0px;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+            img{
+                display: flex;
+                padding: 14px;
+                align-items: flex-start;
+                gap: 10px;
+                border-radius: 58px;
+                background: $colorgrey08;
+                &:hover{
+                    background-color: #703BF7;
+                }
+            }
+        }
+    }
+}
 }
 }
