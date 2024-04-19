@@ -165,16 +165,44 @@ footer{
         margin-top: 100px;
         padding: 16px 0;
         background: $colorgrey10;
+        @include for-size(tablet){
+            margin-top: 80px;
+            padding: 12px 0;
+        }
+        @include for-size(phone){
+            margin-top: 50px;
+            padding: 20px 16px;
+        }
         .container{
+            @include for-size (tablet){
+                width: 100%;
+            }
+            @include for-size(phone){
+                width: 100%;
+            }
             .footer{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                @include for-size(phone){
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    gap: 20px;
+                    align-self: stretch;
+                }
         .left-side{
             display: flex;
             padding: 10px 0px;
             align-items: flex-start;
             gap: 38px;
+            @include for-size(tablet){
+                gap: 20px;
+            }
+            @include for-size(phone){
+                gap: 10px;
+                flex-direction: column;
+                align-items: center;
+            }
             p{
                 color: $colorheader;
                 font-family: $font-header;
@@ -183,6 +211,12 @@ footer{
                 font-weight: 500;
                 line-height: 24px; /* 133.333% */
                 letter-spacing: -0.108px;
+                @include for-size(tablet){
+                    font-size: 14px;
+                }
+                @include for-size(phone){
+                    font-size: 14px;
+                }
             }
             span{
                 color: $colorheader;
@@ -192,6 +226,12 @@ footer{
                 font-weight: 500;
                 line-height: 24px; /* 133.333% */
                 letter-spacing: -0.108px;
+                @include for-size(tablet){
+                    font-size: 14px;
+                }
+                @include for-size(phone){
+                    font-size: 14px;
+                }
             }
         }
         .right-side{
@@ -200,6 +240,12 @@ footer{
             justify-content: flex-end;
             align-items: center;
             gap: 10px;
+            @include for-size(tablet){
+                gap: 8px;
+            }
+            @include for-size(phone){
+                gap: 8px;
+            }
             img{
                 display: flex;
                 padding: 14px;
@@ -209,6 +255,12 @@ footer{
                 background: $colorgrey08;
                 &:hover{
                     background-color: #703BF7;
+                }
+                @include for-size(tablet){
+                    padding: 10px;
+                }
+                @include for-size(tablet){
+                    gap: 20px;
                 }
             }
         }
