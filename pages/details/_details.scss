@@ -1215,6 +1215,213 @@
 
 
 
+// Listing pricing
+
+
+.listing-pricing-section{
+    margin-top: 50px;
+    .container{
+        .listing-pricing{
+            display: flex;
+            align-items: flex-start;
+            gap: 50px;
+            align-self: stretch;
+            .left-side{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 2px;
+                p{
+                    color: var(--Grey-60, #999);
+                    font-family: $font-header;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 30px */ 
+                }
+                span{
+                    color: $colorheader;
+                    font-family: $font-header;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 60px */ 
+                }
+            }
+            .right-side{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 50px;
+                align-self: stretch;
+                flex: 1 0 0;
+                .section{
+                    display: flex;
+                    padding: 50px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 40px;
+                    align-self: stretch;
+                    border-radius: 12px;
+                    border: 1px solid $colorgrey15;
+                    .top{
+                        display: flex;
+                        align-items: center;
+                        gap: 40px;
+                        align-self: stretch;
+                        justify-content: space-between;
+                        p{
+                            color: $colorheader;
+                            font-family: $font-header;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 150%; /* 36px */
+                        }
+                        button{
+                            color: $colorheader;
+                            font-family: $font-header;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%; /* 27px */
+                            display: flex;
+                            padding: 18px 24px;
+                            align-items: center;
+                            gap: 8px;
+                            border-radius: 10px;
+                            border: 1px solid $colorgrey15;
+                            background: $colorgrey10;
+                            cursor: pointer;
+                            &:hover{
+                                box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+                                &:focus{
+                                    animation: pulse 1s;
+                                    animation-iteration-count: infinite;
+                                    box-shadow: 0 0 0 2em transparent;
+                                  }
+                                  
+                                  @keyframes pulse {
+                                    0% {box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;  ; }
+                                  }
+                                }
+
+                            }
+                        }
+                    }
+                    .linebig{
+                        width: 920px;
+                        height: 1px;
+                        background: #262626;
+                    }
+                    .price-content{
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 20px;
+                        align-self: stretch;
+                    .left{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 16px;
+                        flex: 1 0 0;
+                        .name{
+                            p{
+                                color: var(--Grey-60, #999);
+                                font-family: $font-header;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 150%; /* 27px */
+                            }
+                        }
+                        .price{
+                            display: flex;
+                            align-items: center;
+                            gap: 16px;
+                            align-self: stretch;
+                            p{
+                                color: $colorheader;
+                                font-family: $font-header;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 150%; /* 36px */
+                            }
+                            span{
+                                display: flex;
+                                padding: 8px 14px;
+                                align-items: flex-start;
+                                gap: 4px;
+                                border-radius: 28px;
+                                border: 1px solid $colorgrey15;
+                                background: $colorgrey10;
+                                color: var(--Grey-60, #999);
+                                font-family: $font-header;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 150%; /* 27px */
+                            }
+                        }
+                    }
+                    .linesmall{
+                        width: 1px;
+                        height: 86px;
+                        background: #262626;
+                    }
+                    .right{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 16px;
+                        flex: 1 0 0;
+                        .name{
+                            p{
+                                color: var(--Grey-60, #999);
+                                font-family: $font-header;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 150%; /* 27px */
+                            }
+                        }
+                        .price{
+                            display: flex;
+                            align-items: center;
+                            gap: 16px;
+                            align-self: stretch;
+                            p{
+                                color: $colorheader;
+                                font-family: $font-header;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 150%; /* 36px */
+                            }
+                            span{
+                                display: flex;
+                                padding: 8px 14px;
+                                align-items: flex-start;
+                                gap: 4px;
+                                border-radius: 28px;
+                                border: 1px solid $colorgrey15;
+                                background: $colorgrey10;
+                                color: var(--Grey-60, #999);
+                                font-family: $font-header;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 150%; /* 27px */
+                            }
+                        }
+                    }
+                }
+                }
+            }
+        }
+    }
+
 
 
 
