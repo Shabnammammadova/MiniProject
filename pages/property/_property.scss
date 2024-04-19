@@ -227,7 +227,7 @@
         margin-top: 90px;
     }
     @include for-size(phone){
-        margin-top: 50px;
+        margin-top: 80px;
     }
     .container{
         @include for-size(tablet){
@@ -239,6 +239,7 @@
     .discovery-header{
         // padding: 14px 20px;
          width: 100%;
+       
         .stars{
             display: flex;
             align-items: center;
