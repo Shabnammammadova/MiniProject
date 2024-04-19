@@ -21,10 +21,10 @@
             gap: 10px;
         }
         .left-side{
-            // display: flex;
-            // align-items: center;
-            // gap: 20px;
-            // flex: 1 0 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex: 1 0 0;
             // @include for-size(phone){
 
            
@@ -39,16 +39,6 @@
                 font-size: 24px;
             }
           }
-
-        }
-
-        .right-side{
-          display: flex;
-          align-items: center;
-        //   flex-direction: column;
-        justify-content: space-between;
-        
-        gap: 50px;
           .location{
             display: flex;
             padding: 10px;
@@ -63,6 +53,7 @@
             @include for-size(phone){
                 padding: 8px;
                 border-radius: 6px;
+                display: none;
             }
             span{
                 color: $colorheader;
@@ -77,10 +68,25 @@
                 }
             }
           }
+        }
+
+        .right-side{
+          display: flex;
+          align-items: center;
+        //   flex-direction: column;
+        justify-content: space-between;
+        
+        gap: 50px;
+
           .price{
             display: flex;
             flex-direction: column;
             gap: 2px;
+            @include for-size(phone){
+                flex-direction: row;
+                gap: 4px;
+                align-items: center;
+            }
           p{
             color: var(--Grey-60, #999);
             font-family: $font-header;
@@ -104,6 +110,43 @@
             }
           }
         }
+        .location{
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            gap: 6px;
+            border-radius: 8px;
+            border: 1px solid $colorgrey15;
+            display: none;
+            @include for-size(tablet){
+                padding: 8px;
+                border-radius: 6px;
+            }
+            @include for-size(phone){
+                padding: 8px;
+                border-radius: 6px;
+                display: initial;
+                
+            }
+            span{
+                color: $colorheader;
+                font-family: $font-header;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%; /* 27px */
+                
+                @include for-size(tablet){
+                    font-size: 14px;
+                }
+            }
+            img{
+                @include for-size(phone){
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+          }
     }
     }
 }
@@ -115,17 +158,42 @@
 .picturecard-section{
     margin-top: 50px;
     .container{
+        @include for-size(tablet){
+          width: 100%;
+        }
+        @include for-size(phone){
+            width: 100%;
+        }
         .pictures{
             display: flex;
-            padding: 40px;
+            padding: 50px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 30px;
             align-self: stretch;
             border-radius: 12px;
             border: 1px solid $colorgrey15;
             background: $colorgrey10;
+            @include for-size(tablet){
+                padding: 40px;
+                gap: 20px;
+            }
+            @include for-size(phone){
+                padding: 20px;
+                gap: 20px;
+            }
+            .start{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                @include for-size(tablet){
+                    gap: 20px;
+                }
+                @include for-size(phone){
+                    flex-direction: column-reverse;
+                    gap: 20px;
+                }
             .top{
                 display: flex;
                 padding: 10px;
@@ -134,14 +202,62 @@
                 border-radius: 12px;
                 border: 1px solid $colorgrey15;
                 background: $colorgrey08;
-
+                @include for-size(tablet){
+                    padding: 10px;
+                    gap: 10px;
+                }
+                @include for-size(phone){
+                    padding: 10px;
+                    gap: 10px;
+                    align-self: center;
+                }
+               
+                    .picture5 {
+                        @include for-size(phone){
+                            display: none;
+                        }
+                    }
+                    .picture6 {
+                        @include for-size(phone){
+                            display: none;
+                        }
+                    }
+                    .picture7 {
+                        @include for-size(phone){
+                            display: none;
+                        }
+                    }
+                    .picture8 {
+                        @include for-size(phone){
+                            display: none;
+                        }
+                    }
+                    .picture9 {
+                        @include for-size(phone){
+                            display: none;
+                        }
+                    }
+                
             }
             .middle{
                 display: flex;
                 align-items: flex-start;
                 gap: 30px;
-                align-self: stretch;
+                // align-self: stretch;
+                @include for-size(tablet){
+                    gap: 30px;
+                }
+                @include for-size(phone){
+                    align-self: center;
+                    // width: 318px;
+                }
+                .picture2{
+                    @include for-size(phone){
+                        display: none;
+                    }
+                }
             }
+        }
             .bottom{
                 display: flex;
                 padding: 10px;
@@ -149,6 +265,17 @@
                 gap: 10px;
                 border-radius: 100px;
                 background: $colorgrey08;
+                @include for-size(tablet){
+                    padding: 8px;
+                    gap: 10px;
+                    border-radius: 100px;
+                }
+                @include for-size(phone){
+                   padding: 8px;
+                   gap: 0;
+                   justify-content: space-between;
+                   align-self: stretch;
+                }
                 img{
                     display: flex;
                     padding: 14px;
@@ -159,12 +286,20 @@
                     &:hover{
                         background-color: #703BF7;
                     }
+                    @include for-size(tablet){
+                        padding: 10px;
+                        gap: 10px;
+                    }
                 }
                 .lines{
                     display: flex;
                     width: 140px;
-                    align-items: flex-start;
+                    align-items: center;
                     gap: 4px;
+                    @include for-size(tablet){
+                        width: 82px;
+                        gap: 3px;
+                    }
                     .line1{
                         height: 5px;
                         flex: 1 0 0;
@@ -176,10 +311,620 @@
                         flex: 1 0 0;
                         border-radius: 60px;
                         background: $colorgrey30;
+                        @include for-size(tablet){
+                            height: 3px;
+                        }
                     }
                 }
             }
 
+        }
+    }
+}
+
+
+
+// Description
+
+
+
+.description-section{
+    margin-top: 30px;
+    @include for-size(tablet){
+        margin-top: 20px;
+    }
+    .container{
+        @include for-size(tablet){
+            width: 100%;
+        }
+        @include for-size(phone){
+            width: 100%;           
+        }
+        .description-key{
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            align-self: stretch;
+            @include for-size(tablet){
+                gap: 20px;
+            }
+            @include for-size(phone){
+                flex-direction: column;
+            }
+            .left-side{
+                display: flex;
+                padding: 50px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 50px;
+                flex: 1 0 0;
+                border-radius: 12px;
+                border: 1px solid $colorgrey15;
+                @include for-size(tablet){
+                    padding: 40px;
+                    gap: 40px;
+                    border-radius: 10px;
+                }
+                @include for-size(phone){
+                    padding: 20px;
+                    gap: 20px;
+                }
+                .text1{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 14px;
+                    align-self: stretch;
+                    @include for-size(tablet){
+                        gap: 10px;
+                    }
+                    @include for-size(phone){
+                        gap: 6px;
+                    }
+                    p{
+                        color: $colorheader;
+                        font-family: $font-header;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 150%; /* 36px */
+                        @include for-size(tablet){
+                            font-size: 20px;
+                        }
+                        @include for-size(phone){
+                            font-size: 18px;
+                        }
+                    }
+                    span{
+                        color: var(--Grey-60, #999);
+                        font-family: $font-header;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; /* 27px */
+                        @include for-size(tablet){
+                            font-size: 16px;
+                        }
+                        @include for-size(phone){
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .text2{
+                    display: flex;
+                    padding-top: 20px;
+                    align-items: flex-start;
+                    gap: 20px;
+                    align-self: stretch;
+                    border-top: 1px solid $colorgrey15;
+                    @include for-size(tablet){
+                        padding-top:16px ;
+                        gap: 10px;
+                    }
+                    @include for-size(phone){
+                        padding-top: 20px;
+                        gap: 20px;
+                    }
+                        .bottom{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 10px;
+                            flex: 1 0 0;
+                            @include for-size(tablet){
+                               gap: 8px;
+                            }
+                            @include for-size(phone){
+                                gap:6px ;
+                            }
+                            .img1{
+                                display: flex;
+                                align-items: center;
+                                gap: 6px;
+                                align-self: stretch;
+                                @include for-size(tablet){
+                                    gap: 4px;
+                                }
+                                @include for-size(phone){
+                                    gap: 4px;
+                                }
+                                p{
+                                    color: var(--Grey-60, #999);
+                                    font-family: $font-header;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 150%; /* 27px */
+                                    @include for-size(tablet){
+                                        font-size: 14px;
+                                    }
+                                    @include for-size(phone){
+                                        font-size: 14px;
+                                    }
+                                }
+                                img{
+                                    @include for-size(phone){
+                                        width: 22px;
+                                        height: 17px;
+                                        flex-shrink: 0;
+                                    }
+                                }
+                            }
+                            .img2{
+                                p{
+                                    color: $colorheader;
+                                    font-family:$font-header;
+                                    font-size: 24px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: 150%; /* 36px */
+                                    @include for-size(tablet){
+                                       font-size: 20px;
+                                    }
+                                    @include for-size(phone){
+                                        font-size: 18px;
+                                     }
+
+                                }
+                            }
+                        }
+                        .line{
+                            width: 1px;
+                            height: 73px;
+                            background: #262626;
+                            @include for-size(phone){
+                                height: 54px;
+                             }
+                        }
+                    }
+                }
+
+            }
+            .right-side{
+                display: flex;
+                padding: 50px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 50px;
+                flex: 1 0 0;
+                border-radius: 12px;
+                border: 1px solid $colorgrey15;
+                @include for-size(tablet){
+                    padding: 40px;
+                    gap: 40px;
+                }
+                @include for-size(phone){
+                    padding: 20px;
+                    gap: 20px;
+                 }
+                .top{
+                    p{
+                        color: $colorheader;
+                        font-family: $font-header;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 150%; /* 36px */
+                        @include for-size(tablet){
+                            font-size: 20px;
+                        }
+                        @include for-size(phone){
+                          font-size: 18px;
+                        }
+                    }
+                }
+                .bottom{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 30px;
+                    align-self: stretch;
+                    @include for-size(tablet){
+                       gap: 20px;
+                    }
+                    @include for-size(phone){
+                        gap: 18px;
+                    }
+                    .section{
+                        display: flex;
+                        padding: 18px 24px;
+                        align-items: center;
+                        gap: 10px;
+                        align-self: stretch;
+                        border-left: 1px solid var(--Purple-60, #703BF7);
+                        background: linear-gradient(90deg, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
+                        @include for-size(tablet){
+                            padding: 14px 16px;
+                        }
+                        @include for-size(phone){
+                            padding: 10px 12px;
+                        }
+                        .text{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            p{
+                                color: var(--Grey-60, #999);
+                                font-family: $font-header;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 150%; /* 27px */
+                                @include for-size(tablet){
+                                    font-size: 16px;
+                                }
+                                @include for-size(phone){
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+// Inquire about
+
+
+.inquire-about-section{
+    .container{
+        @include for-size(tablet){
+                width: 100%;
+        }
+        .stars{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .inquire-about{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 100px;
+            @include for-size(tablet){
+                gap: 80px;
+            }
+            .left-side{
+
+.content{
+    display: flex;
+    width: 519px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    flex-shrink: 0;
+    @include for-size(tablet){
+        gap: 10px;
+        width: 412px;        
+    }
+     p{
+        color:$colorheader;
+        font-family: $font-header;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 72px */
+        @include for-size(tablet){
+            font-size: 38px;   
+        }
+     }
+     span{
+        color: var(--Grey-60, #999);
+        font-family: $font-header;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        @include for-size(tablet){
+            font-size: 16px;    
+        }
+     }
+}
+ }
+            .right-side{
+                display: flex;
+                padding: 50px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                flex: 1 0 0;
+                border-radius: 12px;
+                border: 1px solid $colorgrey15;
+                @include for-size(tablet){
+                padding: 40px;
+                gap: 40px;
+                }
+                .section{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 30px;
+                    align-self: stretch;
+                    @include for-size(tablet){
+                gap: 20px;
+                    }
+                    .left{
+                        flex: 1 0 0;
+                      .text{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 16px;
+                        flex: 1 0 0;
+                        @include for-size(tablet){
+                        gap: 14px;
+                        }
+                        p{
+                            color: $colorheader;
+                            font-family: $font-header;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 150%; /* 30px */
+                            @include for-size(tablet){
+                             font-size: 16px;
+                            }  
+                        }
+                        span{
+                            color: var(--Grey-40, #666);
+                            font-family:$font-header;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 20px; /* 111.111% */
+                            display: flex;
+                            padding: 24px 20px;
+                            align-items: center;
+                            gap: 12px;
+                            align-self: stretch;
+                            border-radius: 8px;
+                            border: 1px solid $colorgrey15;
+                            background:$colorgrey10;
+                            @include for-size(tablet){
+                             font-size: 14px;
+                             padding: 16px 20px;
+                             gap: 12px;
+                             border-radius: 6px;
+                            }
+                        }
+                      }
+                    }
+                    .right{
+                        flex: 1 0 0;
+                        .text{
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          gap: 16px;
+                          flex: 1 0 0;
+                          @include for-size(tablet){
+                            gap: 14px;
+                            }
+                          p{
+                              color: $colorheader;
+                              font-family: $font-header;
+                              font-size: 20px;
+                              font-style: normal;
+                              font-weight: 600;
+                              line-height: 150%; /* 30px */ 
+                              @include for-size(tablet){
+                                font-size: 16px;
+                               }   
+                          }
+                          span{
+                              color: var(--Grey-40, #666);
+                              font-family: $font-header;
+                              font-size: 18px;
+                              font-style: normal;
+                              font-weight: 500;
+                              line-height: 20px; /* 111.111% */
+                              display: flex;
+                              padding: 24px 20px;
+                              align-items: center;
+                              gap: 12px;
+                              align-self: stretch;
+                              border-radius: 8px;
+                              border: 1px solid $colorgrey15;
+                              background: $colorgrey10;
+                              @include for-size(tablet){
+                                font-size: 14px;
+                                padding: 16px 20px;
+                                gap: 12px;
+                                border-radius: 6px;
+                               }
+                          }
+                        }
+                      }
+
+                }
+                .section3{
+                    .text{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 16px;
+                        align-self: stretch;
+                        flex: 1 0 0;
+                        @include for-size(tablet){
+                            gap: 14px;
+                        }
+                        p{
+                            color: $colorheader;
+                            font-family: $font-header;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 150%; /* 30px */ 
+                            @include for-size(tablet){
+                               font-size: 16px;
+                            }
+                        }
+                        .info{
+                            display: flex;
+                            padding: 24px 20px;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 12px;
+                            align-self: stretch;
+                            border-radius: 8px;
+                            background: $colorgrey10;
+                            @include for-size(tablet){
+                                padding: 16px 20px;
+                                gap: 12px;
+                                border-radius: 6px;
+                            }
+                            span{
+                                
+                                color:$colorwhite90;
+                                font-family: $font-header;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 20px; /* 100% */
+                                @include for-size(tablet){
+                                    font-size: 14px;
+                                   }
+                            }
+                        }
+                    }
+                  }
+                  .section4{
+                    .text{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 16px;
+                        align-self: stretch;
+                        flex: 1 0 0;
+                        @include for-size(tablet){
+                            gap: 16px;
+                           }
+                        p{
+                            color: $colorheader;
+                            font-family: $font-header;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 150%; /* 30px */
+                            @include for-size(tablet){
+                                font-size: 16px;
+                             } 
+                        }
+                        .info{
+                            display: flex;
+                            height: 170px;
+                            padding: 24px 20px;
+                            align-items: flex-start;
+                            gap: 12px;
+                            align-self: stretch;
+                            border-radius: 8px;
+                            border: 1px solid $colorgrey15;
+                            background: $colorgrey10;
+                            @include for-size(tablet){
+                                padding: 16px 20px;
+                                gap: 12px;
+                                border-radius: 6px;
+                            }
+                            span{ 
+                                color: var(--Grey-40, #666);
+                                font-family: $font-header;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 20px; /* 111.111% */
+                                @include for-size(tablet){
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                  }
+
+                  .section5{
+                    .message{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 50px;
+                        align-self: stretch;
+                        @include for-size(tablet){
+                            gap: 50px;
+                        }
+                        .left{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            flex: 1 0 0;
+                            @include for-size(tablet){
+                                gap: 6px;
+                            }
+                            .box{
+                                width: 28px;
+                                height: 28px;
+                                border-radius: 4px;
+                                border: 1px solid $colorgrey15;
+                                background: $colorgrey10;
+                            }
+                            p{
+                                color: var(--Grey-60, #999);
+                                font-family: $font-header;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 150%; /* 27px */
+                                @include for-size(tablet){
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .right{
+                             p{
+                                display: flex;
+                                padding: 18px 46px;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 67px;
+                                border-radius: 8px;
+                                background: var(--Purple-60, #703BF7);
+                                color: $colorheader;
+                                font-family: $font-header;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 24px; /* 133.333% */
+                                @include for-size(tablet){
+                                    font-size: 14px;
+                                    border-radius: 6px;
+                                    padding: 14px 34px;
+                                }
+                             }
+                        }
+                    }
+                  }
+            }
         }
     }
 }
