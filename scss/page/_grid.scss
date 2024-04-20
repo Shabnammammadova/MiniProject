@@ -1,5 +1,8 @@
 .grid-section{
-    margin-top: 60px;
+    margin-top: 2px;
+    @include for-size(tablet){
+        margin-top: 15px;
+    }
     .grid{
         border: 1px solid var(--Grey-15, #262626);
         background: var(--Grey-08, #141414);

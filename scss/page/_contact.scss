@@ -200,6 +200,7 @@
             .right-side{
                width: 50%;
               img{
+                  background: linear-gradient(238deg, #2A213F 8.76%, rgba(25, 25, 25, 0.00) 50.09%), url(<path-to-image>) #141414 50% / cover no-repeat;
                 width: 100%;
                 @include for-size(phone){
                     border-radius: 20px;

@@ -182,14 +182,6 @@ table {
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
-@keyframes navbarlink {
-  from {
-    color: #FF7A00;
-  }
-  to {
-    color: #FFE4CC;
-  }
-}
 .navbar-container .middle-side ul li a:hover {
   color: #999999;
 }
@@ -236,17 +228,6 @@ table {
   font-weight: 500;
   line-height: 150%; /* 27px */
   cursor: pointer;
-  animation-name: button;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
-@keyframes button {
-  from {
-    background: radial-gradient(circle, rgb(43, 95, 156) 0%, rgb(87, 76, 208) 46%, rgb(124, 122, 145) 95%);
-  }
-  to {
-    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
-  }
 }
 .navbar-container .right-side button:hover {
   color: #F1F1F3;
@@ -500,6 +481,7 @@ table {
   width: 50%;
 }
 .contact-section .contact .right-side img {
+  background: linear-gradient(238deg, #2A213F 8.76%, rgba(25, 25, 25, 0) 50.09%), url(<path-to-image>) #141414 50%/cover no-repeat;
   width: 100%;
 }
 @media (max-width: 1200px) {
@@ -510,7 +492,12 @@ table {
 }
 
 .grid-section {
-  margin-top: 60px;
+  margin-top: 2px;
+}
+@media (max-width: 1596px) {
+  .grid-section {
+    margin-top: 15px;
+  }
 }
 .grid-section .grid {
   border: 1px solid var(--Grey-15, #262626);
@@ -4834,12 +4821,13 @@ table {
 }
 @media (max-width: 1596px) {
   .listing-pricing-section .container .listing-pricing .right-side .linebig {
-    width: 685px;
+    max-width: 920px;
+    width: 100%;
   }
 }
 @media (max-width: 1200px) {
   .listing-pricing-section .container .listing-pricing .right-side .linebig {
-    width: 317px;
+    width: 100%;
   }
 }
 .listing-pricing-section .container .listing-pricing .right-side .price-content {
