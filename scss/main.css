@@ -69,6 +69,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url(../assets/images/home/header.png);
   background-repeat: no-repeat;
   background-color: black;
   padding-top: 5px;
@@ -1695,6 +1696,10 @@ table {
 }
 
 .start-journey-section {
+  background-image: url(../assets/images/home/background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 100px 162px;
   border-top: 1px solid #262626;
   border-bottom: 1px solid #262626;
@@ -5551,6 +5556,10 @@ table {
 }
 
 .start-journey-section {
+  background-image: url(../assets/images/home/background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 100px 162px;
   border-top: 1px solid #262626;
   border-bottom: 1px solid #262626;
@@ -5851,9 +5860,16 @@ footer .container .footer-start .right-side .navigation ul li a:hover {
   }
 }
 @media (max-width: 1200px) {
+  footer .container .footer-start .right-side .navigation:nth-child(3) {
+    grid-row: 2/3;
+    grid-column-start: 1;
+  }
+}
+@media (max-width: 1200px) {
   footer .container .footer-start .right-side .navigation5 {
-    position: relative;
-    bottom: 110px;
+    grid-row: 2/3;
+    grid-column-start: 1;
+    margin-top: 100%;
   }
 }
 footer .footer-end {

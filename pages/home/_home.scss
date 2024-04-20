@@ -715,7 +715,10 @@
 
 
 .start-journey-section{
-    // background-image: url('~assets/images/home/vector.png');
+    background-image: url(../assets/images/home/background.jpeg);
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 100px 162px;
     border-top: 1px solid $colorgrey15;
     border-bottom: 1px solid $colorgrey15;

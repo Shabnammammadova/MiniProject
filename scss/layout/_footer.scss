@@ -150,10 +150,17 @@ footer{
                 }
 
             }
+            .navigation:nth-child(3){
+                @include for-size(phone){
+                    grid-row: 2/3;
+                    grid-column-start: 1;
+                 }
+            }
             .navigation5{
                 @include for-size(phone){
-                   position: relative;
-                   bottom: 110px;
+                   grid-row: 2/3;
+                   grid-column-start: 1;
+                   margin-top: 100%;
                 }
            }
         }
