@@ -838,6 +838,32 @@ table {
     padding: 14px 20px;
   }
 }
+.featured-cards .container .cards .card1 {
+  animation-name: featured-card1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes featured-card1 {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.featured-cards .container .cards .card3 {
+  animation-name: featured-card3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes featured-card3 {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
 
 .featured-section {
   margin-top: 116px;
@@ -933,6 +959,17 @@ table {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  animation-duration: 3s;
+  animation-name: text;
+  animation-iteration-count: infinite;
+}
+@keyframes text {
+  from {
+    margin-left: 5%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 @media (max-width: 1596px) {
   .featured-section .container .featured-header .featured-info .left-side {
@@ -1372,6 +1409,17 @@ table {
   border-radius: 12px;
   border: 1px solid #262626;
   background: #141414;
+  animation-name: card;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes card {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 @media (max-width: 1596px) {
   .client-cards .container .cards .card {
@@ -1647,6 +1695,18 @@ table {
   line-height: 131%; /* 23.58px */
   letter-spacing: -0.108px;
   cursor: pointer;
+  animation-name: button;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes button {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(270px);
+    background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+  }
 }
 .frequently-card .container .cards .card .card-header button:hover {
   background-color: #1A64FF;
@@ -2145,6 +2205,17 @@ table {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  animation-name: discovery;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes discovery {
+  from {
+    margin-left: 20px;
+  }
+  to {
+    margin-left: 10px;
+  }
 }
 @media (max-width: 1596px) {
   .discovery-section .container .discovery-header .discovery-info .left-side {
@@ -3580,6 +3651,17 @@ table {
   flex: 1 0 0;
   border-radius: 12px;
   border: 1px solid #262626;
+  animation-name: description-section-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes description-section-left {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translatex(0px);
+  }
 }
 @media (max-width: 1596px) {
   .description-section .container .description-key .left-side {
@@ -3762,6 +3844,17 @@ table {
   flex: 1 0 0;
   border-radius: 12px;
   border: 1px solid #262626;
+  animation-name: description-section-right;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes description-section-right {
+  from {
+    transform: translateX(20px);
+  }
+  to {
+    transform: translatex(0px);
+  }
 }
 @media (max-width: 1596px) {
   .description-section .container .right-side {

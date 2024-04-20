@@ -223,6 +223,32 @@
                     }}
                 }
             }
+            .card1{
+                animation-name: featured-card1;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                @keyframes featured-card1 {
+                    from{
+                        transform: translateX(-50px);
+                    }
+                    to{
+                       transform: translateX(0px);
+                    }
+                }
+            }
+            .card3{
+                animation-name: featured-card3;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                @keyframes featured-card3 {
+                    from{
+                        transform: translateX(50px);
+                    }
+                    to{
+                       transform: translateX(0px);
+                    }
+                }
+            }
         }
     }
 }

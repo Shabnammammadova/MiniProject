@@ -69,6 +69,18 @@
                 display: flex;
                 flex-direction: column;
                 gap:14px ;
+                animation-duration: 3s;
+                animation-name: text;
+                animation-iteration-count: infinite;
+                @keyframes text {
+                    from {
+                      margin-left: 5%;
+                    }
+                  
+                    to {
+                      margin-left: 0%;
+                    }
+                  }
                 @include for-size(tablet){
                     gap:10px
                 }
@@ -454,6 +466,27 @@
                 border-radius: 12px;
                 border: 1px solid $colorgrey15;
                 background: $colorgrey08;
+                animation-name: card;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                @keyframes card {
+                        // 0% {
+                        //     margin-left: -20px;
+                            
+                        //   }
+                        
+                        //   50% {
+                        //     margin-left: 0px;
+                            
+                        //   }
+                        0% {
+                            transform: translateY(-10%);
+                          }
+                        
+                          100% {
+                            transform: translateY(0);
+                          }
+                }
                 @include for-size(tablet){
                     padding: 40px;
                     gap: 30px;
@@ -675,6 +708,20 @@
                     line-height: 131%; /* 23.58px */
                     letter-spacing: -0.108px;
                     cursor: pointer;
+                    animation-name: button;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                    @keyframes button {
+                        from{
+                            transform: rotate(180deg);
+
+                        }
+                        to{
+                            transform: rotate(270px);
+                            background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+                        }
+                        
+                    }
                   
                     &:hover{
                         background-color: $color65;
@@ -696,6 +743,7 @@
             }
            
             }
+
             .card2{
                 height: 375.78px;
                 @include for-size(tablet){
@@ -705,6 +753,7 @@
                     height: 100%;
                 }
             }
+
         }
     }
 }

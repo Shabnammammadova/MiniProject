@@ -293,6 +293,17 @@
                 display: flex;
                 flex-direction: column;
                 gap:14px ;
+                animation-name: discovery ;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                @keyframes discovery{
+                    from{
+                       margin-left: 20px;
+                    }
+                    to{
+                      margin-left: 10px;
+                    }
+                }
                 @include for-size(tablet){
                     gap:10px
                 }

@@ -382,6 +382,17 @@
                 flex: 1 0 0;
                 border-radius: 12px;
                 border: 1px solid $colorgrey15;
+                animation-name: description-section-left;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                @keyframes description-section-left {
+                    from{
+                        transform: translateX(-20px);
+                    }
+                    to{
+                        transform: translatex(0px);
+                    }
+                }
                 @include for-size(tablet){
                     padding: 40px;
                     gap: 40px;
@@ -531,6 +542,17 @@
                 flex: 1 0 0;
                 border-radius: 12px;
                 border: 1px solid $colorgrey15;
+                animation-name: description-section-right;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                @keyframes description-section-right {
+                    from{
+                        transform: translateX(20px);
+                    }
+                    to{
+                        transform: translatex(0px);
+                    }
+                }
                 @include for-size(tablet){
                     padding: 40px;
                     gap: 40px;
