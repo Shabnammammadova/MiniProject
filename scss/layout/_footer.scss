@@ -8,7 +8,7 @@ footer{
     }
     .container{
         @include for-size(tablet){
-            width: 100%;
+            width: 1280px;
         }
         @include for-size(phone){
             width: 358px;
@@ -182,7 +182,7 @@ footer{
         }
         .container{
             @include for-size (tablet){
-                width: 100%;
+                width: 1280px;
             }
             @include for-size(phone){
                 width: 100%;

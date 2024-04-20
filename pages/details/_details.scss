@@ -3,10 +3,10 @@
     margin-top: 120px;
   .container{
     @include for-size(tablet){
-        width: 100%;
+        width: 1280px;
     }
     @include for-size(phone){
-        width: 100%;
+        width: 390px;
     }
     .seaside{
         display: flex;
@@ -159,7 +159,7 @@
     margin-top: 50px;
     .container{
         @include for-size(tablet){
-          width: 100%;
+          width: 1280px;
         }
         @include for-size(phone){
             width: 100%;
@@ -357,7 +357,7 @@
     }
     .container{
         @include for-size(tablet){
-            width: 100%;
+            width: 1280px;
         }
         @include for-size(phone){
             width: 390px;           
@@ -621,7 +621,7 @@
     }
     .container{
         @include for-size(tablet){
-                width: 100%;
+                width: 1280px;
         }
         @include for-size(phone){
             width: 390px;
@@ -1076,10 +1076,10 @@
     }
     .container{
         @include for-size(tablet){
-            width: 100%;
+            width: 1280px;
         }
         @include for-size(phone){
-            width: 100%;
+            width: 390px;
         }
         .content{
             display: flex;
@@ -1155,7 +1155,7 @@
     }
     .container{
         @include for-size(tablet){
-            width: 100%;
+            width: 1280px;
         }
         @include for-size(phone){
            width: 390px;
@@ -1246,7 +1246,7 @@
     }
     .container{
         @include for-size(tablet){
-            width: 100%;
+            width: 1280px;
         }
         @include for-size(phone){
             width: 390px;
@@ -1616,10 +1616,10 @@
     }
     .container{
         @include for-size(tablet){
-            width: 100%;
+            width: 1280px;
         }
         @include for-size(phone){
-            width: 100%;
+            width: 390px;
         }
     .featured-header{
         // padding: 14px 20px;
@@ -1760,7 +1760,7 @@
     }
     .container{
         @include for-size(tablet){
-            width: 100%;
+            width: 1280px;
         }
             @include for-size(phone){
                 width: 390px;
@@ -1896,10 +1896,10 @@
     }
 .container{
     @include for-size(tablet){
-      width: 100%;
+      width: 1280px;
     }
     @include for-size(phone){
-         width: 100%;       
+         width: 390px;       
     }
 
     .number{

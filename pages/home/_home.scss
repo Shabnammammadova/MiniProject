@@ -8,10 +8,10 @@
     }
     .container{
         @include for-size(tablet){
-            width: 100%;
+            width: 1280px;
         }
         @include for-size(phone){
-            width: 100%;
+            width: 390px;
         }
     .featured-header{
         // padding: 14px 20px;
@@ -150,10 +150,10 @@
     }
 .container{
     @include for-size(tablet){
-      width: 100%;
+      width: 1280px;
     }
     @include for-size(phone){
-         width: 100%;       
+         width: 390px;       
     }
 
     .number{
@@ -283,10 +283,10 @@
 .client-section{
     .container{
         @include for-size(tablet){
-            width: 100%;
+            width: 1280px;
         }
         @include for-size(phone){
-            width: 100%;
+            width: 390px;
         }
     
     .stars{
@@ -427,7 +427,7 @@
         }
     .container{
         @include for-size(tablet){
-            width: 100%;
+            width: 1280px;
             }
             @include for-size(phone){
                 width: 358px;

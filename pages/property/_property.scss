@@ -14,7 +14,7 @@
             width: 100%;
         }
         @include for-size(phone){
-            width: 100%;
+            width: 390px;
         }
         .dream-property{
             display: flex;
@@ -154,7 +154,7 @@
         }
         .container{
             @include for-size(tablet){
-                width: 100%;
+                width: 1280px;
             }
             @include for-size(phone){
                 width: 390px;
@@ -200,7 +200,7 @@
                                 gap: 20px;
                                 font-size: 14px;
                                 border-radius: 8px;
-                                width: 318px;
+                                // width: 318px;
                             }
                             
                             .left-side{
@@ -231,10 +231,10 @@
     }
     .container{
         @include for-size(tablet){
-            width: 100%;
+            width: 1280px;
         }
         @include for-size(phone){
-            width: 100%;
+            width: 390px;
         }
     .discovery-header{
         // padding: 14px 20px;
@@ -348,7 +348,7 @@
     .container{
         // width: 1596px;
         @include for-size(tablet){
-            width: 100%;
+            width: 1280px;
         }
         @include for-size(phone){
             width: 390px;
@@ -568,7 +568,7 @@
     }
 .container{
     @include for-size(tablet){
-      width: 100%;
+      width: 1280px;
     }
     @include for-size(phone){
          width: 390px;       
@@ -703,10 +703,10 @@
     }
     .container{
         @include for-size(tablet){
-           width: 100%;
+           width: 1280px;
         }
         @include for-size(phone){
-            width: 100%;
+            width: 390px;
         }
     }
     .let-happen{
@@ -719,7 +719,8 @@
         }
         @include for-size(phone){
             gap: 20px;
-            width: 317px;
+            width: 100%;
+            // width: 317px;
         }
         .top-side{
             display: flex;
