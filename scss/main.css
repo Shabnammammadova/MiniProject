@@ -2675,7 +2675,7 @@ table {
 }
 @media (max-width: 1596px) {
   .let-happen-section .container {
-    width: 1280px;
+    width: 100%;
   }
 }
 @media (max-width: 1280px) {
