@@ -223,37 +223,43 @@
                     }}
                 }
             }
-            .card1{
-                animation-name: featured-card1;
-                animation-duration: 4s;
-                animation-iteration-count: infinite;
-                @keyframes featured-card1 {
-                    from{
-                        transform: translateX(-50px);
-                    }
-                    to{
-                       transform: translateX(0px);
-                    }
+        
+        }
+        &:first-child {
+            animation: featurecard1 ease-in-out 1s;
+            @keyframes featurecard1 {
+                0%{
+                    transform:translateX(100%) ;
+                }
+                100%{
+                    transform: translateX(0);
                 }
             }
-            .card3{
-                animation-name: featured-card3;
-                animation-duration: 4s;
-                animation-iteration-count: infinite;
-                @keyframes featured-card3 {
-                    from{
-                        transform: translateX(50px);
-                    }
-                    to{
-                       transform: translateX(0px);
-                    }
-                }
+        }
+        &:nth-child(2){
+            animation: featurecard2 ease-in-out 1s;
+            @keyframes featurecard2 {
+                0% {
+                    transform: translateY(200px);
+                  }
+                  100% {
+                    transform: translateY(0px);
+                  }
+            }
+        }
+    &:last-child{
+        animation: featurecard3 ease-in-out 1s;
+        @keyframes featurecard3 {
+            0%{
+                transform:translateX(-100%) ;
+            }
+            100%{
+                transform: translateX(0);
             }
         }
     }
 }
 
 
-
-
+    }
 

@@ -73,13 +73,7 @@
                 animation-name: text;
                 animation-iteration-count: infinite;
                 @keyframes text {
-                    from {
-                      margin-left: 5%;
-                    }
-                  
-                    to {
-                      margin-left: 0%;
-                    }
+                
                   }
                 @include for-size(tablet){
                     gap:10px
@@ -714,6 +708,7 @@
                     @keyframes button {
                         from{
                             transform: rotate(180deg);
+
 
                         }
                         to{

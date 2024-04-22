@@ -838,30 +838,37 @@ table {
     padding: 14px 20px;
   }
 }
-.featured-cards .container .cards .card1 {
-  animation-name: featured-card1;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+.featured-cards .container:first-child {
+  animation: featurecard1 ease-in-out 1s;
 }
-@keyframes featured-card1 {
-  from {
-    transform: translateX(-50px);
+@keyframes featurecard1 {
+  0% {
+    transform: translateX(100%);
   }
-  to {
-    transform: translateX(0px);
+  100% {
+    transform: translateX(0);
   }
 }
-.featured-cards .container .cards .card3 {
-  animation-name: featured-card3;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+.featured-cards .container:nth-child(2) {
+  animation: featurecard2 ease-in-out 1s;
 }
-@keyframes featured-card3 {
-  from {
-    transform: translateX(50px);
+@keyframes featurecard2 {
+  0% {
+    transform: translateY(200px);
   }
-  to {
-    transform: translateX(0px);
+  100% {
+    transform: translateY(0px);
+  }
+}
+.featured-cards .container:last-child {
+  animation: featurecard3 ease-in-out 1s;
+}
+@keyframes featurecard3 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -963,14 +970,7 @@ table {
   animation-name: text;
   animation-iteration-count: infinite;
 }
-@keyframes text {
-  from {
-    margin-left: 5%;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
+@keyframes text {}
 @media (max-width: 1596px) {
   .featured-section .container .featured-header .featured-info .left-side {
     gap: 10px;
@@ -2209,14 +2209,7 @@ table {
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
-@keyframes discovery {
-  from {
-    margin-left: 20px;
-  }
-  to {
-    margin-left: 10px;
-  }
-}
+@keyframes discovery {}
 @media (max-width: 1596px) {
   .discovery-section .container .discovery-header .discovery-info .left-side {
     gap: 10px;
@@ -3651,16 +3644,14 @@ table {
   flex: 1 0 0;
   border-radius: 12px;
   border: 1px solid #262626;
-  animation-name: description-section-left;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation: card-left ease-in-out 2s;
 }
-@keyframes description-section-left {
-  from {
-    transform: translateX(-20px);
+@keyframes card-left {
+  0% {
+    transform: translateX(100%);
   }
-  to {
-    transform: translatex(0px);
+  100% {
+    transform: translateX(0);
   }
 }
 @media (max-width: 1596px) {
@@ -3844,31 +3835,29 @@ table {
   flex: 1 0 0;
   border-radius: 12px;
   border: 1px solid #262626;
-  animation-name: description-section-right;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation: card-right ease-in-out 2s;
 }
-@keyframes description-section-right {
-  from {
-    transform: translateX(20px);
+@keyframes card-right {
+  0% {
+    transform: translateX(-100%);
   }
-  to {
-    transform: translatex(0px);
+  100% {
+    transform: translateX(0);
   }
 }
 @media (max-width: 1596px) {
-  .description-section .container .right-side {
+  .description-section .container {
     padding: 40px;
     gap: 40px;
   }
 }
 @media (max-width: 1280px) {
-  .description-section .container .right-side {
+  .description-section .container {
     padding: 20px;
     gap: 20px;
   }
 }
-.description-section .container .right-side .top p {
+.description-section .container .top p {
   color: var(--Absolute-White, #FFF);
   font-family: Urbanist;
   font-size: 24px;
@@ -3877,16 +3866,16 @@ table {
   line-height: 150%; /* 36px */
 }
 @media (max-width: 1596px) {
-  .description-section .container .right-side .top p {
+  .description-section .container .top p {
     font-size: 20px;
   }
 }
 @media (max-width: 1280px) {
-  .description-section .container .right-side .top p {
+  .description-section .container .top p {
     font-size: 18px;
   }
 }
-.description-section .container .right-side .bottom {
+.description-section .container .bottom {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -3894,16 +3883,16 @@ table {
   align-self: stretch;
 }
 @media (max-width: 1596px) {
-  .description-section .container .right-side .bottom {
+  .description-section .container .bottom {
     gap: 20px;
   }
 }
 @media (max-width: 1280px) {
-  .description-section .container .right-side .bottom {
+  .description-section .container .bottom {
     gap: 18px;
   }
 }
-.description-section .container .right-side .bottom .section {
+.description-section .container .bottom .section {
   display: flex;
   padding: 18px 24px;
   align-items: center;
@@ -3913,21 +3902,21 @@ table {
   background: linear-gradient(90deg, #1A1A1A 0%, rgba(26, 26, 26, 0) 100%);
 }
 @media (max-width: 1596px) {
-  .description-section .container .right-side .bottom .section {
+  .description-section .container .bottom .section {
     padding: 14px 16px;
   }
 }
 @media (max-width: 1280px) {
-  .description-section .container .right-side .bottom .section {
+  .description-section .container .bottom .section {
     padding: 10px 12px;
   }
 }
-.description-section .container .right-side .bottom .section .text {
+.description-section .container .bottom .section .text {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.description-section .container .right-side .bottom .section .text p {
+.description-section .container .bottom .section .text p {
   color: var(--Grey-60, #999);
   font-family: Urbanist;
   font-size: 18px;
@@ -3936,12 +3925,12 @@ table {
   line-height: 150%; /* 27px */
 }
 @media (max-width: 1596px) {
-  .description-section .container .right-side .bottom .section .text p {
+  .description-section .container .bottom .section .text p {
     font-size: 16px;
   }
 }
 @media (max-width: 1280px) {
-  .description-section .container .right-side .bottom .section .text p {
+  .description-section .container .bottom .section .text p {
     font-size: 14px;
   }
 }
