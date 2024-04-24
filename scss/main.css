@@ -4728,6 +4728,15 @@ table {
   align-items: center;
   flex-direction: column;
   gap: 2px;
+  animation: listing-pricing-left ease-in-out 7s;
+}
+@keyframes listing-pricing-left {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (max-width: 1596px) {
   .listing-pricing-section .container .listing-pricing .left-side {
@@ -4782,6 +4791,15 @@ table {
   gap: 50px;
   align-self: stretch;
   flex: 1 0 0;
+  animation: listing-pricing-right forwards 2s;
+}
+@keyframes listing-pricing-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 @media (max-width: 1596px) {
   .listing-pricing-section .container .listing-pricing .right-side {
